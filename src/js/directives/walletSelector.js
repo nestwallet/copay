@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.directives')
+angular.module('nestApp.directives')
   .directive('walletSelector', function($timeout, lodash) {
     return {
       restrict: 'E',

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('joinController',
+angular.module('nestApp.controllers').controller('joinController',
   function($scope, $rootScope, $timeout, $state, $ionicHistory, $ionicScrollDelegate, profileService, configService, storageService, applicationService, gettextCatalog, lodash, ledger, trezor, intelTEE, derivationPathHelper, ongoingProcess, walletService, $log, $stateParams, popupService, appConfigService) {
 
     $scope.$on("$ionicView.beforeEnter", function(event, data) {
@@ -57,7 +57,7 @@ angular.module('copayApp.controllers').controller('joinController',
 
     if ($stateParams.url) {
       var data = $stateParams.url;
-      data = data.replace('copay:', '');
+      data = data.replace('nest:', '');
       $scope.onQrCodeScannedJoin(data);
     }
 
@@ -76,7 +76,7 @@ angular.module('copayApp.controllers').controller('joinController',
 
       */
 
-      if (appConfigService.name == 'copay') {
+      if (appConfigService.name == 'nest') {
         if (walletService.externalSource.ledger.supported) {
           $scope.seedOptions.push({
             id: walletService.externalSource.ledger.id,
@@ -141,7 +141,7 @@ angular.module('copayApp.controllers').controller('joinController',
 
       if ($scope.formData.seedSource.id == walletService.externalSource.ledger.id || $scope.formData.seedSource.id == walletService.externalSource.trezor.id || $scope.formData.seedSource.id == walletService.externalSource.intelTEE.id) {
         if ($scope.formData.coin == 'bch') {
-          popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Hardware wallets are not yet supported with Bitcoin Cash'));
+          popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Hardware wallets are not yet supported with Litecoin Cash'));
           return;
         }
 
@@ -209,7 +209,7 @@ angular.module('copayApp.controllers').controller('joinController',
             });
             $state.go('tabs.home');
             $timeout(function() {
-              $state.transitionTo('tabs.copayers', {
+              $state.transitionTo('tabs.nesters', {
                 walletId: client.credentials.walletId
               });
             });

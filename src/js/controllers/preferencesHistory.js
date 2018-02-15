@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('preferencesHistory',
+angular.module('nestApp.controllers').controller('preferencesHistory',
   function($scope, $log, $stateParams, $timeout, $state, $ionicHistory, storageService, platformInfo, profileService, lodash, appConfigService, walletService) {
     $scope.wallet = profileService.getWallet($stateParams.walletId);
     $scope.csvReady = false;
@@ -48,21 +48,21 @@ angular.module('copayApp.controllers').controller('preferencesHistory',
         var satToBtc = 1 / 100000000;
         $scope.csvContent = [];
         $scope.csvFilename = $scope.appName + '-' + $scope.wallet.name + '.csv';
-        $scope.csvHeader = ['Date', 'Destination', 'Description', 'Amount', 'Currency', 'Txid', 'Creator', 'Copayers', 'Comment'];
+        $scope.csvHeader = ['Date', 'Destination', 'Description', 'Amount', 'Currency', 'Txid', 'Creator', 'Nesters', 'Comment'];
 
-        var _amount, _note, _copayers, _creator, _comment;
+        var _amount, _note, _nesters, _creator, _comment;
         data.forEach(function(it, index) {
           var amount = it.amount;
 
           if (it.action == 'moved')
             amount = 0;
 
-          _copayers = '';
+          _nesters = '';
           _creator = '';
 
           if (it.actions && it.actions.length > 1) {
             for (var i = 0; i < it.actions.length; i++) {
-              _copayers += it.actions[i].copayerName + ':' + it.actions[i].type + ' - ';
+              _nesters += it.actions[i].nesterName + ':' + it.actions[i].type + ' - ';
             }
             _creator = (it.creatorName && it.creatorName != 'undefined') ? it.creatorName : '';
           }
@@ -81,7 +81,7 @@ angular.module('copayApp.controllers').controller('preferencesHistory',
             'Currency': 'BTC',
             'Txid': it.txid,
             'Creator': _creator,
-            'Copayers': _copayers,
+            'Nesters': _nesters,
             'Comment': _comment
           });
 
@@ -89,13 +89,13 @@ angular.module('copayApp.controllers').controller('preferencesHistory',
             var _fee = (it.fees * satToBtc).toFixed(8)
             $scope.csvContent.push({
               'Date': formatDate(it.time * 1000),
-              'Destination': 'Bitcoin Network Fees',
+              'Destination': 'Litecoin Network Fees',
               'Description': '',
               'Amount': '-' + _fee,
               'Currency': 'BTC',
               'Txid': '',
               'Creator': '',
-              'Copayers': ''
+              'Nesters': ''
             });
           }
         });

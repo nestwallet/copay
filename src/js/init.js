@@ -2,9 +2,9 @@
 
 angular.element(document).ready(function() {
 
-  // Run copayApp after device is ready.
+  // Run nestApp after device is ready.
   var startAngular = function() {
-    angular.bootstrap(document, ['copayApp']);
+    angular.bootstrap(document, ['nestApp']);
   };
 
 

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').factory('bitpayCardService', function($log, $rootScope, $filter, lodash, storageService, bitauthService, platformInfo, moment, appIdentityService, bitpayService, nextStepsService, txFormatService, appConfigService) {
+angular.module('nestApp.services').factory('bitpayCardService', function($log, $rootScope, $filter, lodash, storageService, bitauthService, platformInfo, moment, appIdentityService, bitpayService, nextStepsService, txFormatService, appConfigService) {
   var root = {};
 
   var _setError = function(msg, e) {
@@ -1462,7 +1462,7 @@ angular.module('copayApp.services').factory('bitpayCardService', function($log, 
     9701: 'default',
     9702: 'default',
     9950: 'default',
-    'bp001': 'bitcoin-topup',
+    'bp001': 'litecoin-topup',
     'bp002': 'default'
   };
 

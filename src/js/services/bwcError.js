@@ -1,5 +1,5 @@
 'use strict';
-angular.module('copayApp.services')
+angular.module('nestApp.services')
   .factory('bwcError', function bwcErrorService($log, gettextCatalog) {
     var root = {};
 
@@ -58,8 +58,8 @@ angular.module('copayApp.services')
           case 'WALLET_ALREADY_EXISTS':
             body = gettextCatalog.getString('Wallet already exists');
             break;
-          case 'COPAYER_IN_WALLET':
-            body = gettextCatalog.getString('Copayer already in this wallet');
+          case 'NESTER_IN_WALLET':
+            body = gettextCatalog.getString('Nester already in this wallet');
             break;
           case 'WALLET_FULL':
             body = gettextCatalog.getString('Wallet is full');
@@ -73,8 +73,8 @@ angular.module('copayApp.services')
           case 'LOCKED_FUNDS':
             body = gettextCatalog.getString('Funds are locked by pending spend proposals');
             break;
-          case 'COPAYER_VOTED':
-            body = gettextCatalog.getString('Copayer already voted on this spend proposal');
+          case 'NESTER_VOTED':
+            body = gettextCatalog.getString('Nester already voted on this spend proposal');
             break;
           case 'NOT_AUTHORIZED':
             body = gettextCatalog.getString('Not authorized');
@@ -98,13 +98,13 @@ angular.module('copayApp.services')
             body = gettextCatalog.getString('The spend proposal is not pending');
             break;
           case 'UPGRADE_NEEDED':
-            body = gettextCatalog.getString('Please upgrade Copay to perform this action');
+            body = gettextCatalog.getString('Please upgrade Nest to perform this action');
             break;
           case 'BAD_SIGNATURES':
             body = gettextCatalog.getString('Signatures rejected by server');
             break;
-          case 'COPAYER_DATA_MISMATCH':
-            body = gettextCatalog.getString('Copayer data mismatch');
+          case 'NESTER_DATA_MISMATCH':
+            body = gettextCatalog.getString('Nester data mismatch');
             break;
           case 'DUST_AMOUNT':
             body = gettextCatalog.getString('Amount below minimum allowed');
@@ -112,7 +112,7 @@ angular.module('copayApp.services')
           case 'INCORRECT_ADDRESS_NETWORK':
             body = gettextCatalog.getString('Incorrect network address');
             break;
-          case 'COPAYER_REGISTERED':
+          case 'NESTER_REGISTERED':
             body = gettextCatalog.getString('Key already associated with an existing wallet');
             break;
           case 'INVALID_ADDRESS':

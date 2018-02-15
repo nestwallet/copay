@@ -1,5 +1,5 @@
 'use strict';
-angular.module('copayApp.services')
+angular.module('nestApp.services')
   .factory('storageService', function(logHeader, fileStorageService, localStorageService, sjcl, $log, lodash, platformInfo, $timeout) {
 
     var root = {};
@@ -29,7 +29,7 @@ angular.module('copayApp.services')
         }, cb);
     };
 
-    // This is only used in Copay, we used to encrypt profile
+    // This is only used in Nest, we used to encrypt profile
     // using device's UUID.
 
     var decryptOnMobile = function(text, cb) {
@@ -82,7 +82,7 @@ angular.module('copayApp.services')
       });
     };
 
-    // This is only use in Copay, for very old instalations
+    // This is only use in Nest, for very old instalations
     // in which we use to use localStorage instead of fileStorage
     root.tryToMigrate = function(cb) {
       if (!shouldUseFileStorage) return cb();
@@ -228,7 +228,7 @@ angular.module('copayApp.services')
     };
 
     //for compatibility
-    root.getCopayDisclaimerFlag = function(cb) {
+    root.getNestDisclaimerFlag = function(cb) {
       storage.get('agreeDisclaimer', cb);
     };
 

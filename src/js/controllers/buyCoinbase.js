@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('buyCoinbaseController', function($scope, $log, $state, $timeout, $ionicHistory, $ionicScrollDelegate, $ionicConfig, lodash, coinbaseService, popupService, profileService, ongoingProcess, walletService, txFormatService, externalLinkService) {
+angular.module('nestApp.controllers').controller('buyCoinbaseController', function($scope, $log, $state, $timeout, $ionicHistory, $ionicScrollDelegate, $ionicConfig, lodash, coinbaseService, popupService, profileService, ongoingProcess, walletService, txFormatService, externalLinkService) {
 
   var coin = 'btc';
   var amount;
@@ -24,7 +24,7 @@ angular.module('copayApp.controllers').controller('buyCoinbaseController', funct
 
   var statusChangeHandler = function (processName, showName, isOn) {
     $log.debug('statusChangeHandler: ', processName, showName, isOn);
-    if ( processName == 'buyingBitcoin' && !isOn) {
+    if ( processName == 'buyingLitecoin' && !isOn) {
       $scope.sendStatus = 'success';
       $timeout(function() {
         $scope.$digest();
@@ -144,16 +144,16 @@ angular.module('copayApp.controllers').controller('buyCoinbaseController', funct
   };
 
   $scope.buyConfirm = function() {
-    var message = 'Buy bitcoin for ' + $scope.amountUnitStr;
+    var message = 'Buy litecoin for ' + $scope.amountUnitStr;
     var okText = 'Confirm';
     var cancelText = 'Cancel';
     popupService.showConfirm(null, message, okText, cancelText, function(ok) {
       if (!ok) return;
 
-      ongoingProcess.set('buyingBitcoin', true, statusChangeHandler);
+      ongoingProcess.set('buyingLitecoin', true, statusChangeHandler);
       coinbaseService.init(function(err, res) {
         if (err) {
-          ongoingProcess.set('buyingBitcoin', false, statusChangeHandler);
+          ongoingProcess.set('buyingLitecoin', false, statusChangeHandler);
           showError(err);
           return;
         }
@@ -167,27 +167,27 @@ angular.module('copayApp.controllers').controller('buyCoinbaseController', funct
         };
         coinbaseService.buyRequest(accessToken, accountId, dataSrc, function(err, b) {
           if (err) {
-            ongoingProcess.set('buyingBitcoin', false, statusChangeHandler);
+            ongoingProcess.set('buyingLitecoin', false, statusChangeHandler);
             showError(err);
             return;
           }
 
           var processBuyTx = function (tx) {
             if (!tx) {
-              ongoingProcess.set('buyingBitcoin', false, statusChangeHandler);
+              ongoingProcess.set('buyingLitecoin', false, statusChangeHandler);
               showError('Transaction not found');
               return;
             }
 
             coinbaseService.getTransaction(accessToken, accountId, tx.id, function(err, updatedTx) {
               if (err) {
-                ongoingProcess.set('buyingBitcoin', false, statusChangeHandler);
+                ongoingProcess.set('buyingLitecoin', false, statusChangeHandler);
                 showError(err);
                 return;
               }
               walletService.getAddress($scope.wallet, false, function(err, walletAddr) {
                 if (err) {
-                  ongoingProcess.set('buyingBitcoin', false, statusChangeHandler);
+                  ongoingProcess.set('buyingLitecoin', false, statusChangeHandler);
                   showError(err);
                   return;
                 }
@@ -196,7 +196,7 @@ angular.module('copayApp.controllers').controller('buyCoinbaseController', funct
 
                 $log.debug('Saving transaction to process later...');
                 coinbaseService.savePendingTransaction(updatedTx.data, {}, function(err) {
-                  ongoingProcess.set('buyingBitcoin', false, statusChangeHandler);
+                  ongoingProcess.set('buyingLitecoin', false, statusChangeHandler);
                   if (err) $log.debug(err);
                 });
               });
@@ -206,7 +206,7 @@ angular.module('copayApp.controllers').controller('buyCoinbaseController', funct
           var _processBuyOrder = function() {
             coinbaseService.getBuyOrder(accessToken, accountId, b.data.id, function (err, buyResp) {
               if (err) {
-                ongoingProcess.set('buyingBitcoin', false, statusChangeHandler);
+                ongoingProcess.set('buyingLitecoin', false, statusChangeHandler);
                 showError(err);
                 return;
               }

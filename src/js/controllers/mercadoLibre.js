@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('mercadoLibreController',
+angular.module('nestApp.controllers').controller('mercadoLibreController',
   function($scope, $timeout, $log, mercadoLibreService, externalLinkService, popupService) {
 
     $scope.openExternalLink = function(url) {

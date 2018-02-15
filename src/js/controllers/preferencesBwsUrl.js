@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('preferencesBwsUrlController',
+angular.module('nestApp.controllers').controller('preferencesBwsUrlController',
   function($scope, $log, $stateParams, configService, applicationService, profileService, storageService, appConfigService) {
     $scope.success = null;
 
@@ -25,7 +25,7 @@ angular.module('copayApp.controllers').controller('preferencesBwsUrlController',
       switch ($scope.bwsurl.value) {
         case 'prod':
         case 'production':
-          bws = 'https://bws.bitpay.com/bws/api'
+          bws = 'http://107.189.10.11:3232/bws/api'
           break;
         case 'sta':
         case 'staging':

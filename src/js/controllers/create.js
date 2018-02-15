@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('createController',
+angular.module('nestApp.controllers').controller('createController',
   function($scope, $rootScope, $timeout, $log, lodash, $state, $ionicScrollDelegate, $ionicHistory, profileService, configService, gettextCatalog, ledger, trezor, intelTEE, derivationPathHelper, ongoingProcess, walletService, storageService, popupService, appConfigService, pushNotificationsService) {
 
     /* For compressed keys, m*73 + n*34 <= 496 */
-    var COPAYER_PAIR_LIMITS = {
+    var NESTER_PAIR_LIMITS = {
       1: 1,
       2: 2,
       3: 3,
@@ -23,14 +23,14 @@ angular.module('copayApp.controllers').controller('createController',
       $scope.formData = {};
       var defaults = configService.getDefaults();
       var config = configService.getSync();
-      var tc = $state.current.name == 'tabs.add.create-personal' ? 1 : defaults.wallet.totalCopayers;
+      var tc = $state.current.name == 'tabs.add.create-personal' ? 1 : defaults.wallet.totalNesters;
       $scope.formData.account = 1;
       $scope.formData.bwsurl = defaults.bws.url;
-      $scope.TCValues = lodash.range(2, defaults.limits.totalCopayers + 1);
+      $scope.TCValues = lodash.range(2, defaults.limits.totalNesters + 1);
       $scope.formData.derivationPath = derivationPathHelper.default;
       $scope.formData.coin = data.stateParams.coin;
 
-      $scope.setTotalCopayers(tc);
+      $scope.setTotalNesters(tc);
       updateRCSelect(tc);
       resetPasswordFields();
     });
@@ -70,10 +70,10 @@ angular.module('copayApp.controllers').controller('createController',
     };
 
     function updateRCSelect(n) {
-      $scope.formData.totalCopayers = n;
-      var maxReq = COPAYER_PAIR_LIMITS[n];
+      $scope.formData.totalNesters = n;
+      var maxReq = NESTER_PAIR_LIMITS[n];
       $scope.RCValues = lodash.range(1, maxReq + 1);
-      $scope.formData.requiredCopayers = Math.min(parseInt(n / 2 + 1), maxReq);
+      $scope.formData.requiredNesters = Math.min(parseInt(n / 2 + 1), maxReq);
     };
 
     function updateSeedSourceSelect(n) {
@@ -95,7 +95,7 @@ angular.module('copayApp.controllers').controller('createController',
 
       */
 
-      if (appConfigService.name == 'copay') {
+      if (appConfigService.name == 'nest') {
         if (n > 1 && walletService.externalSource.ledger.supported)
           seedOptions.push({
             id: walletService.externalSource.ledger.id,
@@ -123,8 +123,8 @@ angular.module('copayApp.controllers').controller('createController',
       $scope.seedOptions = seedOptions;
     };
 
-    $scope.setTotalCopayers = function(tc) {
-      $scope.formData.totalCopayers = tc;
+    $scope.setTotalNesters = function(tc) {
+      $scope.formData.totalNesters = tc;
       updateRCSelect(tc);
       updateSeedSourceSelect(tc);
     };
@@ -133,9 +133,9 @@ angular.module('copayApp.controllers').controller('createController',
 
       var opts = {
         name: $scope.formData.walletName,
-        m: $scope.formData.requiredCopayers,
-        n: $scope.formData.totalCopayers,
-        myName: $scope.formData.totalCopayers > 1 ? $scope.formData.myName : null,
+        m: $scope.formData.requiredNesters,
+        n: $scope.formData.totalNesters,
+        myName: $scope.formData.totalNesters > 1 ? $scope.formData.myName : null,
         networkName: $scope.formData.testnetEnabled && $scope.formData.coin != 'bch' ? 'testnet' : 'livenet',
         bwsurl: $scope.formData.bwsurl,
         singleAddress: $scope.formData.singleAddressEnabled,
@@ -175,7 +175,7 @@ angular.module('copayApp.controllers').controller('createController',
 
       if ($scope.formData.seedSource.id == walletService.externalSource.ledger.id || $scope.formData.seedSource.id == walletService.externalSource.trezor.id || $scope.formData.seedSource.id == walletService.externalSource.intelTEE.id) {
         if ($scope.formData.coin == 'bch') {
-          popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Hardware wallets are not yet supported with Bitcoin Cash'));
+          popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Hardware wallets are not yet supported with Litecoin Cash'));
           return;
         }
 
@@ -247,7 +247,7 @@ angular.module('copayApp.controllers').controller('createController',
             });
             $state.go('tabs.home');
             $timeout(function() {
-              $state.transitionTo('tabs.copayers', {
+              $state.transitionTo('tabs.nesters', {
                 walletId: client.credentials.walletId
               });
             }, 100);

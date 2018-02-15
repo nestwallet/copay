@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('shapeshiftConfirmController', function($scope, $log, $state, $timeout, $ionicHistory, $ionicConfig, lodash, popupService, profileService, ongoingProcess, configService, walletService, bwcError, externalLinkService, platformInfo, gettextCatalog, txFormatService, shapeshiftService, bitcore, bitcoreCash) {
+angular.module('nestApp.controllers').controller('shapeshiftConfirmController', function($scope, $log, $state, $timeout, $ionicHistory, $ionicConfig, lodash, popupService, profileService, ongoingProcess, configService, walletService, bwcError, externalLinkService, platformInfo, gettextCatalog, txFormatService, shapeshiftService, bitcore, bitcoreCash) {
 
   var amount;
   var currency;

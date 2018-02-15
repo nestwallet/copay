@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').factory('coinbaseService', function($http, $log, $window, $filter, platformInfo, lodash, storageService, configService, appConfigService, txFormatService, buyAndSellService, $rootScope, feeService) {
+angular.module('nestApp.services').factory('coinbaseService', function($http, $log, $window, $filter, platformInfo, lodash, storageService, configService, appConfigService, txFormatService, buyAndSellService, $rootScope, feeService) {
   var root = {};
   var credentials = {};
   var isCordova = platformInfo.isCordova;
@@ -141,7 +141,7 @@ angular.module('copayApp.services').factory('coinbaseService', function($http, $
     _getNetAmount(amount, function(err, reducedAmount) {
       if (err) return cb(err);
 
-      // Check if transaction has enough funds to transfer bitcoin from Coinbase to Copay
+      // Check if transaction has enough funds to transfer litecoin from Coinbase to Nest
       if (reducedAmount < 0) {
         return cb('Not enough funds for fee');
       }

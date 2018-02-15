@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('tabHomeController',
+angular.module('nestApp.controllers').controller('tabHomeController',
   function($rootScope, $timeout, $scope, $state, $stateParams, $ionicModal, $ionicScrollDelegate, $window, gettextCatalog, lodash, popupService, ongoingProcess, externalLinkService, latestReleaseService, profileService, walletService, configService, $log, platformInfo, storageService, txpModalService, appConfigService, startupService, addressbookService, feedbackService, bwcError, nextStepsService, buyAndSellService, homeIntegrationsService, bitpayCardService, pushNotificationsService, timeService) {
     var wallet;
     var listeners = [];
@@ -142,7 +142,7 @@ angular.module('copayApp.controllers').controller('tabHomeController',
     };
 
     $scope.goToDownload = function() {
-      var url = 'https://github.com/bitpay/copay/releases/latest';
+      var url = 'https://github.com/bitpay/nest/releases/latest';
       var optIn = true;
       var title = gettextCatalog.getString('Update Available');
       var message = gettextCatalog.getString('An update to this app is available. For your security, please update to the latest version.');
@@ -187,7 +187,7 @@ angular.module('copayApp.controllers').controller('tabHomeController',
 
     $scope.openWallet = function(wallet) {
       if (!wallet.isComplete()) {
-        return $state.go('tabs.copayers', {
+        return $state.go('tabs.nesters', {
           walletId: wallet.credentials.walletId
         });
       }

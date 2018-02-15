@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').factory('configService', function(storageService, lodash, $log, $timeout, $rootScope, platformInfo) {
+angular.module('nestApp.services').factory('configService', function(storageService, lodash, $log, $timeout, $rootScope, platformInfo) {
   var root = {};
 
   var isWindowsPhoneApp = platformInfo.isCordova && platformInfo.isWP;
@@ -8,21 +8,21 @@ angular.module('copayApp.services').factory('configService', function(storageSer
   var defaultConfig = {
     // wallet limits
     limits: {
-      totalCopayers: 6,
+      totalNesters: 6,
       mPlusN: 100,
     },
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://bws.bitpay.com/bws/api',
+      url: 'http://107.189.10.11:3232/bws/api',
     },
 
     download: {
       bitpay: {
         url: 'https://bitpay.com/wallet'
       },
-      copay: {
-        url: 'https://copay.io/#download'
+      nest: {
+        url: 'https://nest.io/#download'
       }
     },
 
@@ -32,16 +32,16 @@ angular.module('copayApp.services').factory('configService', function(storageSer
         android: 'https://play.google.com/store/apps/details?id=com.bitpay.wallet',
         wp: ''
       },
-      copay: {
+      nest: {
         ios: 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=951330296&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8',
-        android: 'https://play.google.com/store/apps/details?id=com.bitpay.copay',
+        android: 'https://play.google.com/store/apps/details?id=com.bitpay.nest',
         wp: ''
       }
     },
     // wallet default config
     wallet: {
-      requiredCopayers: 2,
-      totalCopayers: 3,
+      requiredNesters: 2,
+      totalNesters: 3,
       spendUnconfirmed: false,
       reconnectDelay: 5000,
       idleDurationMin: 4,
@@ -74,7 +74,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     },
 
     release: {
-      url: 'https://api.github.com/repos/bitpay/copay/releases/latest'
+      url: 'https://api.github.com/repos/bitpay/nest/releases/latest'
     },
 
     pushNotificationsEnabled: true,

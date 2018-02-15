@@ -13,17 +13,17 @@ var modules = [
   'angular-md5',
   'bwcModule',
   'bitauthModule',
-  'copayApp.filters',
-  'copayApp.services',
-  'copayApp.controllers',
-  'copayApp.directives',
-  'copayApp.addons'
+  'nestApp.filters',
+  'nestApp.services',
+  'nestApp.controllers',
+  'nestApp.directives',
+  'nestApp.addons'
 ];
 
-var copayApp = window.copayApp = angular.module('copayApp', modules);
+var nestApp = window.nestApp = angular.module('nestApp', modules);
 
-angular.module('copayApp.filters', []);
-angular.module('copayApp.services', []);
-angular.module('copayApp.controllers', []);
-angular.module('copayApp.directives', []);
-angular.module('copayApp.addons', []);
+angular.module('nestApp.filters', []);
+angular.module('nestApp.services', []);
+angular.module('nestApp.controllers', []);
+angular.module('nestApp.directives', []);
+angular.module('nestApp.addons', []);

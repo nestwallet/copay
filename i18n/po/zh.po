@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: copay\n"
+"Project-Id-Version: nest\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: crowdin.com\n"
-"X-Crowdin-Project: copay\n"
+"X-Crowdin-Project: nest\n"
 "X-Crowdin-Language: zh-CN\n"
 "X-Crowdin-File: template.pot\n"
 "Last-Translator: cmgustavo83\n"
@@ -23,8 +23,8 @@ msgid "(possible double spend)"
 msgstr "（重复支付）"
 
 #: www/views/modals/txp-details.html:159
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
-msgstr "* 如果 1) 你是创造者，及没有其他 copayer 签名，或 2) 24 小时已经过去，支付提议将被删除。"
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other nester has signed, or 2) 24 hours have passed since the proposal was created."
+msgstr "* 如果 1) 你是创造者，及没有其他 nester 签名，或 2) 24 小时已经过去，支付提议将被删除。"
 
 #: www/views/tx-details.html:82
 msgid "- {{btx.feeRateStr}} of the transaction"
@@ -178,11 +178,11 @@ msgid "All Addresses"
 msgstr "所有地址"
 
 #: www/views/modals/wallet-balance.html:18
-msgid "All of your bitcoin wallet balance may not be available for immediate spending."
+msgid "All of your litecoin wallet balance may not be available for immediate spending."
 msgstr "所有您的比特币的钱包余额可能无法用于直接支出。"
 
 #: www/views/tab-receive.html:25
-msgid "All signing devices must be added to this multisig wallet before bitcoin addresses can be created."
+msgid "All signing devices must be added to this multisig wallet before litecoin addresses can be created."
 msgstr "比特币地址可以创建之前，签名的所有设备都必须都添加到这个对数钱包。"
 
 #: www/views/tab-scan.html:21
@@ -229,11 +229,11 @@ msgid "An update to this app is available. For your security, please update to t
 msgstr "本程序有一个可用的更新。为了您的安全，请更新到最新版本。"
 
 #: www/views/backupWarning.html:14
-msgid "Anyone with your backup phrase can access or spend your bitcoin."
+msgid "Anyone with your backup phrase can access or spend your litecoin."
 msgstr "任何人只要持有你的备份短语，就可以访问或者花掉你的比特币。"
 
 #: www/views/addresses.html:94
-msgid "Approximate Bitcoin network fee to transfer wallet's balance (with normal priority)"
+msgid "Approximate Litecoin network fee to transfer wallet's balance (with normal priority)"
 msgstr "转移钱包余额大约需要的比特币网络费用（正常优先级）"
 
 #: www/views/backupWarning.html:10
@@ -241,10 +241,10 @@ msgid "Are you being watched?"
 msgstr "你正在被监视吗？"
 
 #: src/js/controllers/preferencesExternal.js:15
-msgid "Are you being watched? Anyone with your recovery phrase can access or spend your bitcoin."
+msgid "Are you being watched? Anyone with your recovery phrase can access or spend your litecoin."
 msgstr "请确认目前没有人在监视你的屏幕！因为只要有人知道了你的恢复短语，他就拥有你的比特币完全访问权限，甚至可以直接用于消费！"
 
-#: src/js/controllers/copayers.js:56
+#: src/js/controllers/nesters.js:56
 msgid "Are you sure you want to cancel and delete this wallet?"
 msgstr "确定取消和删除这个钱包？"
 
@@ -354,45 +354,45 @@ msgstr "BitPay Visa&reg; 牌"
 
 #: www/views/addressbook.add.html:38
 #: www/views/includes/incomingDataMenu.html:29
-msgid "Bitcoin Address"
+msgid "Litecoin Address"
 msgstr "比特币地址"
 
 #: www/views/includes/walletSelector.html:42
 #: www/views/tab-home.html:112
 #: www/views/tab-settings.html:108
-msgid "Bitcoin Cash Wallets"
+msgid "Litecoin Cash Wallets"
 msgstr "比特币现金钱包"
 
 #: www/views/modals/chooseFeeLevel.html:4
 #: www/views/preferencesFee.html:4
 #: www/views/tab-settings.html:83
-msgid "Bitcoin Network Fee Policy"
+msgid "Litecoin Network Fee Policy"
 msgstr "比特币网络手续费策略"
 
 #: www/views/includes/walletSelector.html:11
 #: www/views/tab-home.html:97
 #: www/views/tab-settings.html:100
-msgid "Bitcoin Wallets"
+msgid "Litecoin Wallets"
 msgstr "比特币钱包"
 
 #: src/js/services/incomingData.js:151
-msgid "Bitcoin cash Payment"
+msgid "Litecoin cash Payment"
 msgstr "比特币现金支付"
 
 #: www/views/onboarding/tour.html:31
-msgid "Bitcoin is a currency."
+msgid "Litecoin is a currency."
 msgstr "比特币是一种货币。"
 
 #: www/views/onboarding/disclaimer.html:15
-msgid "Bitcoin is different &ndash; it cannot be safely held with a bank or web service."
+msgid "Litecoin is different &ndash; it cannot be safely held with a bank or web service."
 msgstr "比特币是不同 — — 它不能安全地举行以银行或 web 服务。"
 
 #: www/views/onboarding/tour.html:18
-msgid "Bitcoin is secure,<br>digital money."
+msgid "Litecoin is secure,<br>digital money."
 msgstr "比特币是安全的 <br>数字货币。"
 
 #: www/views/preferencesFee.html:11
-msgid "Bitcoin transactions include a fee collected by miners on the network."
+msgid "Litecoin transactions include a fee collected by miners on the network."
 msgstr "比特币交易包括在网络上被矿工所收取的费用。"
 
 #: www/views/buyAmazon.html:108
@@ -422,11 +422,11 @@ msgid "Buy"
 msgstr "购买"
 
 #: www/views/includes/buyAndSellCard.html:3
-msgid "Buy &amp; Sell Bitcoin"
+msgid "Buy &amp; Sell Litecoin"
 msgstr "购买或出售比特币"
 
 #: www/views/tab-send.html:40
-msgid "Buy Bitcoin"
+msgid "Buy Litecoin"
 msgstr "购买比特币"
 
 #: www/views/mercadoLibre.html:22
@@ -439,7 +439,7 @@ msgid "Buy from"
 msgstr "从什么地方购买"
 
 #: src/js/services/onGoingProcess.js:40
-msgid "Buying Bitcoin..."
+msgid "Buying Litecoin..."
 msgstr "正在发送 比特币..."
 
 #: src/js/services/onGoingProcess.js:12
@@ -465,7 +465,7 @@ msgstr "正在计算费用"
 msgid "Cancel"
 msgstr "取消"
 
-#: www/views/copayers.html:36
+#: www/views/nesters.html:36
 msgid "Cancel invitation"
 msgstr "取消邀请"
 
@@ -557,7 +557,7 @@ msgstr "完成"
 #: src/js/controllers/buyAmazon.js:313
 #: src/js/controllers/buyMercadoLibre.js:307
 #: src/js/controllers/confirm.js:549
-#: src/js/controllers/copayers.js:55
+#: src/js/controllers/nesters.js:55
 #: src/js/controllers/topup.js:285
 #: www/views/backup.html:60
 #: www/views/backup.html:79
@@ -621,30 +621,30 @@ msgid "Contribute Translations"
 msgstr "参与翻译"
 
 #: src/js/controllers/confirm.js:130
-msgid "Copay only supports Bitcoin Cash using new version numbers addresses"
-msgstr "Copay只支持新版本的比特币现金地址"
+msgid "Nest only supports Litecoin Cash using new version numbers addresses"
+msgstr "Nest只支持新版本的比特币现金地址"
 
 #: src/js/services/bwcError.js:62
-msgid "Copayer already in this wallet"
-msgstr "Copayer 已经在这个钱包里"
+msgid "Nester already in this wallet"
+msgstr "Nester 已经在这个钱包里"
 
 #: src/js/services/bwcError.js:77
-msgid "Copayer already voted on this spend proposal"
-msgstr "Copayer 已经表决此花费提议"
+msgid "Nester already voted on this spend proposal"
+msgstr "Nester 已经表决此花费提议"
 
 #: src/js/services/bwcError.js:107
-msgid "Copayer data mismatch"
-msgstr "Copayer 的数据不匹配"
+msgid "Nester data mismatch"
+msgstr "Nester 的数据不匹配"
 
 #: www/views/includes/walletActivity.html:2
-msgid "Copayer joined"
-msgstr "Copayer 加入"
+msgid "Nester joined"
+msgstr "Nester 加入"
 
 #: www/views/preferencesInformation.html:94
-msgid "Copayer {{$index}}"
-msgstr "Copayer {{$index}}"
+msgid "Nester {{$index}}"
+msgstr "Nester {{$index}}"
 
-#: src/js/controllers/copayers.js:79
+#: src/js/controllers/nesters.js:79
 #: src/js/controllers/export.js:193
 #: www/views/includes/copyToClipboard.html:4
 msgid "Copied to clipboard"
@@ -797,7 +797,7 @@ msgstr "无法更新交易历史记录"
 
 #: src/js/controllers/addresses.js:29
 #: src/js/controllers/addresses.js:37
-#: src/js/controllers/copayers.js:30
+#: src/js/controllers/nesters.js:30
 #: src/js/controllers/walletDetails.js:78
 msgid "Could not update wallet"
 msgstr "无法更新钱包"
@@ -813,7 +813,7 @@ msgstr "创建自己的免费钱包"
 #: www/views/onboarding/tour.html:51
 #: www/views/tab-home.html:89
 #: www/views/tab-send.html:41
-msgid "Create bitcoin wallet"
+msgid "Create litecoin wallet"
 msgstr "创建比特币的钱包"
 
 #: www/views/tab-create-personal.html:131
@@ -825,8 +825,8 @@ msgid "Create shared wallet"
 msgstr "创建共享的钱包"
 
 #: www/views/tab-create-shared.html:160
-msgid "Create {{formData.requiredCopayers}}-of-{{formData.totalCopayers}} wallet"
-msgstr "创建 {{formData.requiredCopayers}} 的{{formData.totalCopayers}} 钱包"
+msgid "Create {{formData.requiredNesters}}-of-{{formData.totalNesters}} wallet"
+msgstr "创建 {{formData.requiredNesters}} 的{{formData.totalNesters}} 钱包"
 
 #: www/views/modals/txp-details.html:81
 #: www/views/tx-details.html:60
@@ -877,7 +877,7 @@ msgstr "删除支付提议"
 msgid "Delete Wallet"
 msgstr "删除钱包"
 
-#: www/views/copayers.html:59
+#: www/views/nesters.html:59
 msgid "Delete it and create a new one"
 msgstr "删除并创建新的"
 
@@ -939,7 +939,7 @@ msgid "Duplicating wallet..."
 msgstr "正在复制钱包……"
 
 #: www/views/addresses.html:19
-msgid "Each bitcoin wallet can generate billions of addresses from your 12-word backup. A new address is automatically generated and shown each time you receive a payment."
+msgid "Each litecoin wallet can generate billions of addresses from your 12-word backup. A new address is automatically generated and shown each time you receive a payment."
 msgstr "每个比特币钱包可以从您的 12 字备份生成亿万个地址。一个新的地址是自动生成和显示每个时间你收到付款。"
 
 #: src/js/services/feeService.js:13
@@ -1028,7 +1028,7 @@ msgstr "请输入你的密码"
 #: src/js/controllers/buyMercadoLibre.js:24
 #: src/js/controllers/buyMercadoLibre.js:35
 #: src/js/controllers/confirm.js:307
-#: src/js/controllers/copayers.js:67
+#: src/js/controllers/nesters.js:67
 #: src/js/controllers/create.js:159
 #: src/js/controllers/create.js:172
 #: src/js/controllers/create.js:178
@@ -1394,7 +1394,7 @@ msgstr "硬件钱包"
 
 #: src/js/controllers/create.js:178
 #: src/js/controllers/join.js:144
-msgid "Hardware wallets are not yet supported with Bitcoin Cash"
+msgid "Hardware wallets are not yet supported with Litecoin Cash"
 msgstr "比特币现金钱包暂时不支持硬件钱包"
 
 #: www/views/modals/mercadolibre-card-details.html:69
@@ -1476,7 +1476,7 @@ msgid "I understand"
 msgstr "我知道了"
 
 #: www/views/onboarding/disclaimer.html:21
-msgid "I understand that if this app is moved to another device or deleted, my bitcoin can only be recovered with the backup phrase."
+msgid "I understand that if this app is moved to another device or deleted, my litecoin can only be recovered with the backup phrase."
 msgstr "我明白是否这个应用程序是搬到另一个设备或删除，我比特币可以只能进行恢复与备份的短语。"
 
 #: www/views/onboarding/disclaimer.html:18
@@ -1612,7 +1612,7 @@ msgstr "无效的数据"
 msgid "Invalid derivation path"
 msgstr "衍生路径无效"
 
-#: src/js/controllers/copayers.js:90
+#: src/js/controllers/nesters.js:90
 msgid "Invitation to share a {{appName}} Wallet"
 msgstr "邀请分享 {{appName}} 钱包"
 
@@ -1634,7 +1634,7 @@ msgid "Is this email address correct?"
 msgstr "此电子邮件地址是正确的？"
 
 #: www/views/addresses.html:25
-msgid "It's a good idea to avoid reusing addresses - this both protects your privacy and keeps your bitcoins secure against hypothetical attacks by quantum computers."
+msgid "It's a good idea to avoid reusing addresses - this both protects your privacy and keeps your litecoins secure against hypothetical attacks by quantum computers."
 msgstr "它是一个好主意，以避免重用地址 — — 这既能保护您的隐私又保持您的比特币安全假设攻击由量子计算机。"
 
 #: src/js/controllers/backup.js:76
@@ -1645,7 +1645,7 @@ msgstr "它是重要的你写你备份的短语正确。如果发生什么事情
 msgid "Join"
 msgstr "加入"
 
-#: src/js/controllers/copayers.js:85
+#: src/js/controllers/nesters.js:85
 msgid "Join my {{appName}} Wallet. Here is the invitation code: {{secret}} You can download {{appName}} for your phone or desktop at {{appUrl}}"
 msgstr "加入我的 {{appName}} 的钱包。这里是邀请码︰ {{secret}} 你可以下载为您的电话或桌面的 {{appUrl}} {{appName}}"
 
@@ -1743,7 +1743,7 @@ msgstr "有道理"
 msgid "Matches:"
 msgstr "匹配："
 
-#: www/views/includes/copayers.html:4
+#: www/views/includes/nesters.html:4
 #: www/views/preferencesInformation.html:85
 msgid "Me"
 msgstr "我"
@@ -1850,7 +1850,7 @@ msgid "No access key defined"
 msgstr "授权密钥未定义"
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no bitcoin."
+msgid "No backup, no litecoin."
 msgstr "没有备份，没有比特币。"
 
 #: www/views/addressbook.html:19
@@ -1907,7 +1907,7 @@ msgid "No wallets available to receive funds"
 msgstr "没有可用于接收资金的钱包"
 
 #: www/views/preferencesCash.html:15
-msgid "No wallets eligible for Bitcoin Cash support"
+msgid "No wallets eligible for Litecoin Cash support"
 msgstr "没有錢包合乎支持小比特幣資格"
 
 #: src/js/controllers/preferencesCash.js:58
@@ -1952,7 +1952,7 @@ msgid "Note: if this BCH wallet was duplicated from a BTC wallet, they share the
 msgstr "注意: 如此比特幣錢包由小比特幣复制，他們共享相同恢復短語"
 
 #: www/views/modals/wallets.html:25
-msgid "Notice: only 1-1 (single signature) wallets can be used for sell bitcoin"
+msgid "Notice: only 1-1 (single signature) wallets can be used for sell litecoin"
 msgstr "注意︰ 只有 1-1 （单签名） 钱包可以用于卖比特币"
 
 #: www/views/preferencesNotifications.html:3
@@ -2092,7 +2092,7 @@ msgid "Paste the backup plain text code"
 msgstr "粘贴备份的纯文本代码"
 
 #: www/views/bitpayCardIntro.html:28
-msgid "Pay 0% fees to turn bitcoin into dollars."
+msgid "Pay 0% fees to turn litecoin into dollars."
 msgstr "0%付费以比特币变成美元。"
 
 #: www/views/modals/paypro.html:18
@@ -2153,7 +2153,7 @@ msgid "Payment accepted. It will be broadcasted by Glidera. In case there is a p
 msgstr "支付以被接受。它将由 Glidera 广播。如果出现问题，它可以在创建后的 6 个小时内删除。"
 
 #: src/js/services/incomingData.js:152
-msgid "Payment address was translated to new Bitcoin Cash address format:"
+msgid "Payment address was translated to new Litecoin Cash address format:"
 msgstr "付款地址转化为新的小比特幣地址格式"
 
 #: www/views/modals/txp-details.html:107
@@ -2207,8 +2207,8 @@ msgid "Please tap each word in the correct order."
 msgstr "请点击每个单词按照正确的顺序。"
 
 #: src/js/services/bwcError.js:101
-msgid "Please upgrade Copay to perform this action"
-msgstr "请升级 Copay 以执行此操作"
+msgid "Please upgrade Nest to perform this action"
+msgstr "请升级 Nest 以执行此操作"
 
 #: www/views/walletDetails.html:142
 #: www/views/walletDetails.html:62
@@ -2507,7 +2507,7 @@ msgid "Search Transactions"
 msgstr "搜索交易"
 
 #: www/views/tab-send.html:18
-msgid "Search or enter bitcoin address"
+msgid "Search or enter litecoin address"
 msgstr "搜索或输入比特币地址"
 
 #: www/views/modals/search.html:16
@@ -2539,7 +2539,7 @@ msgid "Self-signed Certificate"
 msgstr "自签名证书"
 
 #: src/js/services/onGoingProcess.js:41
-msgid "Selling Bitcoin..."
+msgid "Selling Litecoin..."
 msgstr "出售比特币......"
 
 #: www/views/feedback/send.html:13
@@ -2660,9 +2660,9 @@ msgstr "设置"
 msgid "Share the love by inviting your friends."
 msgstr "邀请您的朋友分享爱。"
 
-#: www/views/copayers.html:20
-msgid "Share this invitation with your copayers"
-msgstr "将此邀请与你的 copayers 共享"
+#: www/views/nesters.html:20
+msgid "Share this invitation with your nesters"
+msgstr "将此邀请与你的 nesters 共享"
 
 #: src/js/controllers/feedback/complete.js:5
 #: www/views/tab-settings.html:36
@@ -2692,7 +2692,7 @@ msgid "Show advanced options"
 msgstr "显示高级选项"
 
 #: www/views/tab-send.html:42
-msgid "Show bitcoin address"
+msgid "Show litecoin address"
 msgstr "显示比特币地址"
 
 #: www/views/tab-send.html:64
@@ -2740,7 +2740,7 @@ msgid "Slide to send"
 msgstr "在此點擊滑動以發送"
 
 #: www/views/preferencesCash.html:56
-msgid "Some of your wallets are not eligible for Bitcoin Cash support. You can try to access BCH funds from these wallets using the"
+msgid "Some of your wallets are not eligible for Litecoin Cash support. You can try to access BCH funds from these wallets using the"
 msgstr "你有些錢包不合資格得到小比特幣的支持可嘗試連結這些錢包至BCH基金"
 
 #: src/js/controllers/create.js:86
@@ -2761,11 +2761,11 @@ msgid "Spending Password needed"
 msgstr "需要支付密码"
 
 #: www/views/walletDetails.html:173
-msgid "Spending this balance will need significant Bitcoin network fees"
+msgid "Spending this balance will need significant Litecoin network fees"
 msgstr "这笔交易将需要非常高的比特币网络手续费"
 
 #: www/views/tab-send.html:33
-msgid "Start sending bitcoin"
+msgid "Start sending litecoin"
 msgstr "开始发送比特币"
 
 #: www/views/lockSetup.html:3
@@ -2803,7 +2803,7 @@ msgid "THIS ACTION CANNOT BE REVERSED"
 msgstr "此操作无法撤消"
 
 #: www/views/onboarding/welcome.html:5
-msgid "Take control of your money,<br>get started with bitcoin."
+msgid "Take control of your money,<br>get started with litecoin."
 msgstr "把你的钱，<br>得到控制开始用比特币。"
 
 #: www/views/walletDetails.html:132
@@ -2859,15 +2859,15 @@ msgid "The Ledger Chrome application is not installed"
 msgstr "Ledger Chrome 应用程序未安装"
 
 #: www/views/modals/wallet-balance.html:55
-msgid "The amount of bitcoin immediately spendable from this wallet."
+msgid "The amount of litecoin immediately spendable from this wallet."
 msgstr "比特币立即可从这个钱包的金额。"
 
 #: www/views/modals/wallet-balance.html:93
-msgid "The amount of bitcoin stored in this wallet that is allocated as inputs to your pending transaction proposals. The amount is determined using unspent transaction outputs associated with this wallet and may be more than the actual amounts associated with your pending transaction proposals."
+msgid "The amount of litecoin stored in this wallet that is allocated as inputs to your pending transaction proposals. The amount is determined using unspent transaction outputs associated with this wallet and may be more than the actual amounts associated with your pending transaction proposals."
 msgstr "比特币存储在分配作为你挂起的事务建议的输入这个钱包中的金额。量确定使用未用余额交易记录输出与这个钱包关联，可能会与您挂起的事务建议相关联的实际数额超过。"
 
 #: www/views/modals/wallet-balance.html:74
-msgid "The amount of bitcoin stored in this wallet with less than 1 blockchain confirmation."
+msgid "The amount of litecoin stored in this wallet with less than 1 blockchain confirmation."
 msgstr "比特币存储在与小于 1 blockchain 确认这个钱包中的金额。"
 
 #: www/views/tab-import-phrase.html:5
@@ -2922,7 +2922,7 @@ msgid "The spend proposal is not pending"
 msgstr "花费提议不是未决"
 
 #: www/views/modals/wallet-balance.html:36
-msgid "The total amount of bitcoin stored in this wallet."
+msgid "The total amount of litecoin stored in this wallet."
 msgstr "比特币存储在这个钱包的总量。"
 
 #: www/views/preferencesHistory.html:27
@@ -2953,11 +2953,11 @@ msgid "This app is fantastic!"
 msgstr "这个应用程序太棒了 ！"
 
 #: www/views/onboarding/tour.html:47
-msgid "This app stores your bitcoin with cutting-edge security."
+msgid "This app stores your litecoin with cutting-edge security."
 msgstr "此应用程序商店你比特币与尖端的安全。"
 
 #: src/js/controllers/confirm.js:523
-msgid "This bitcoin payment request has expired."
+msgid "This litecoin payment request has expired."
 msgstr "这比特币付款请求已过期。"
 
 #: www/views/join.html:133
@@ -2971,7 +2971,7 @@ msgid "This recovery phrase was created with a password. To recover this wallet 
 msgstr "此恢复短语是用密码创建。为了恢复此钱包，需要恢复短语和密码。"
 
 #: www/views/tx-details.html:91
-msgid "This transaction amount is too small compared to current Bitcoin network fees. Spending these funds will need a Bitcoin network fee cost comparable to the funds itself."
+msgid "This transaction amount is too small compared to current Litecoin network fees. Spending these funds will need a Litecoin network fee cost comparable to the funds itself."
 msgstr "相对于当前比特币网络费，这笔交易金额太小。手续费相当于这笔交易金额本身。"
 
 #: www/views/tx-details.html:87
@@ -2998,11 +2998,11 @@ msgid "To"
 msgstr "发送到"
 
 #: www/views/tab-send.html:37
-msgid "To get started, buy bitcoin or share your address. You can receive bitcoin from any wallet or service."
+msgid "To get started, buy litecoin or share your address. You can receive litecoin from any wallet or service."
 msgstr "若要开始，请买比特币或共享您的地址。你可以从任何钱包或服务接收比特币。"
 
 #: www/views/tab-send.html:38
-msgid "To get started, you'll need to create a bitcoin wallet and get some bitcoin."
+msgid "To get started, you'll need to create a litecoin wallet and get some litecoin."
 msgstr "若要开始，您将需要创建一个比特币的钱包，并获得一些比特币。"
 
 #: src/js/services/bitpayAccountService.js:73
@@ -3029,8 +3029,8 @@ msgid "Total Locked Balance"
 msgstr "锁定结余的总额"
 
 #: www/views/tab-create-shared.html:35
-msgid "Total number of copayers"
-msgstr "Copayers 的总数"
+msgid "Total number of nesters"
+msgstr "Nesters 的总数"
 
 #: www/views/addresses.html:81
 msgid "Total wallet inputs"
@@ -3094,7 +3094,7 @@ msgid "Try again in {{expires}}"
 msgstr "在 {{expires}} 中再试一次"
 
 #: www/views/bitpayCardIntro.html:18
-msgid "Turn bitcoin into dollars, swipe anywhere Visa<sup>&reg;</sup> is accepted."
+msgid "Turn litecoin into dollars, swipe anywhere Visa<sup>&reg;</sup> is accepted."
 msgstr "比特币变成美元，刷在接受 Visa<sup>®</sup> 的任何地方。"
 
 #: www/views/tab-import-phrase.html:17
@@ -3204,7 +3204,7 @@ msgid "WARNING: UNTRUSTED CERTIFICATE"
 msgstr "警告︰不受信任的证书"
 
 #: www/views/preferencesPrivateKey.html:14
-msgid "WARNING: Your extended private keys are all that is needed to access your bitcoin funds. Be sure to protect your private keys and store them only on secure devices. BitPay does not have access to your private keys, so you alone are responsible for your keys. If you share key access with external services, you take responsibility for the risk of theft or breach. Only advanced users should handle extended private keys directly."
+msgid "WARNING: Your extended private keys are all that is needed to access your litecoin funds. Be sure to protect your private keys and store them only on secure devices. BitPay does not have access to your private keys, so you alone are responsible for your keys. If you share key access with external services, you take responsibility for the risk of theft or breach. Only advanced users should handle extended private keys directly."
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:15
@@ -3215,11 +3215,11 @@ msgstr "正在等待 Ledger..."
 msgid "Waiting for Trezor..."
 msgstr "正在等待 Trezor..."
 
-#: www/views/copayers.html:48
-msgid "Waiting for copayers"
-msgstr "正在等待 copayers"
+#: www/views/nesters.html:48
+msgid "Waiting for nesters"
+msgstr "正在等待 nesters"
 
-#: www/views/copayers.html:53
+#: www/views/nesters.html:53
 msgid "Waiting..."
 msgstr "等待中..."
 
@@ -3311,7 +3311,7 @@ msgstr "已经在 {{appName}} 的钱包"
 msgid "Wallet created"
 msgstr "创建的钱包"
 
-#: www/views/copayers.html:58
+#: www/views/nesters.html:58
 msgid "Wallet incomplete and broken"
 msgstr "钱包不完整和损坏"
 
@@ -3457,7 +3457,7 @@ msgid "You can make contributions by signing up on our Crowdin community transla
 msgstr "您可以通过签约我们 Crowdin 社区翻译网站作出贡献。我们期待你的听力 ！"
 
 #: www/views/tab-scan.html:16
-msgid "You can scan bitcoin addresses, payment requests, paper wallets, and more."
+msgid "You can scan litecoin addresses, payment requests, paper wallets, and more."
 msgstr "您可以扫描比特币地址、 付款申请、 纸钱包和更多。"
 
 #: src/js/controllers/preferencesAbout.js:14
@@ -3465,7 +3465,7 @@ msgid "You can see the latest developments and contribute to this open source ap
 msgstr "你可以看到最新的事态发展和贡献这个开放源码应用程序通过在 GitHub 上访问我们的项目。"
 
 #: www/views/onboarding/tour.html:19
-msgid "You can spend bitcoin at millions of websites and stores worldwide."
+msgid "You can spend litecoin at millions of websites and stores worldwide."
 msgstr "你可以花比特币在数以百万计的网站和世界各地的商店。"
 
 #: www/views/backup.html:15
@@ -3477,7 +3477,7 @@ msgid "You can trade it for other currencies like US Dollars, Euros, or Pounds."
 msgstr "你可以换其他货币，如美元、 欧元或英镑。"
 
 #: www/views/onboarding/tour.html:46
-msgid "You control your bitcoin."
+msgid "You control your litecoin."
 msgstr "您可以控制您的比特币。"
 
 #: www/views/modals/chooseFeeLevel.html:64
@@ -3502,11 +3502,11 @@ msgid "Your Gift Cards"
 msgstr "礼品卡"
 
 #: www/views/includes/confirmBackupPopup.html:6
-msgid "Your bitcoin wallet is backed up!"
+msgid "Your litecoin wallet is backed up!"
 msgstr "你的比特币钱包被备份 ！"
 
 #: www/views/tab-home.html:50
-msgid "Your bitcoin wallet is ready!"
+msgid "Your litecoin wallet is ready!"
 msgstr "你的比特币钱包是准备好了 ！"
 
 #: www/views/modals/chooseFeeLevel.html:61
@@ -3594,11 +3594,11 @@ msgid "{{amountStr}} for Mercado Livre Brazil Gift Card"
 msgstr "梅尔卡多里弗巴西礼品卡 {{amountStr}}"
 
 #: www/views/preferencesBwsUrl.html:21
-msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bws.bitpay.com (BitPay's public BWS instance)."
-msgstr "{{appName}} 中的区块链信息依赖于 Bitcore Wallet Service (BWS)、网络和 Copayer synchronization。默认配置指向 https://bws.bitpay.com (BitPay 的公共 BWS 实例)。"
+msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Nester synchronization. The default configuration points to http://107.189.10.11:3232 (BitPay's public BWS instance)."
+msgstr "{{appName}} 中的区块链信息依赖于 Bitcore Wallet Service (BWS)、网络和 Nester synchronization。默认配置指向 http://107.189.10.11:3232 (BitPay 的公共 BWS 实例)。"
 
 #: src/js/controllers/confirm.js:408
-msgid "{{fee}} will be deducted for bitcoin networking fees."
+msgid "{{fee}} will be deducted for litecoin networking fees."
 msgstr "{{fee}} 将比特币网络费用中扣除。"
 
 #: www/views/confirm.html:85
@@ -3609,7 +3609,7 @@ msgstr "发送量 {{tx.txp[wallet.id].feeRatePerStr}}"
 msgid "{{updatingTxHistoryProgress}} transactions downloaded"
 msgstr "下载的 {{updatingTxHistoryProgress}} 交易"
 
-#: www/views/copayers.html:46
+#: www/views/nesters.html:46
 #: www/views/includes/walletInfo.html:18
 #: www/views/preferencesCash.html:33
 msgid "{{wallet.m}}-of-{{wallet.n}}"

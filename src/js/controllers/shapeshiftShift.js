@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('shapeshiftShiftController',
+angular.module('nestApp.controllers').controller('shapeshiftShiftController',
   function($scope, $ionicHistory, $timeout, $log, $state, profileService, popupService, lodash, shapeshiftService, gettextCatalog, externalLinkService) {
 
     var defaultCoin = 'btc';

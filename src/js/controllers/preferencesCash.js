@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('preferencesCashController',
+angular.module('nestApp.controllers').controller('preferencesCashController',
   function($rootScope, $timeout, $scope, $state, $ionicHistory, gettextCatalog, lodash, ongoingProcess, profileService, walletService, $log, txFormatService, bwcError, pushNotificationsService, bwcService, externalLinkService) {
     var wallet;
     var errors = bwcService.getErrors();
@@ -12,7 +12,7 @@ angular.module('copayApp.controllers').controller('preferencesCashController',
     });
 
     $scope.openRecoveryToolLink = function() {
-      var url = 'https://bitpay.github.io/copay-recovery/';
+      var url = 'https://bitpay.github.io/nest-recovery/';
       var optIn = true;
       var title = null;
       var message = gettextCatalog.getString('Open the recovery tool.');
@@ -103,7 +103,7 @@ angular.module('copayApp.controllers').controller('preferencesCashController',
       opts.name = wallet.name + '[BCH]';
       opts.m = wallet.m;
       opts.n = wallet.n;
-      opts.myName = wallet.credentials.copayerName;
+      opts.myName = wallet.credentials.nesterName;
       opts.networkName = wallet.network;
       opts.coin = 'bch';
       opts.walletPrivKey = wallet.credentials.walletPrivKey;
@@ -145,14 +145,14 @@ angular.module('copayApp.controllers').controller('preferencesCashController',
         });
       };
 
-      // Multisig wallets? add Copayers
-      function addCopayers(newWallet, isNew, cb) {
+      // Multisig wallets? add Nesters
+      function addNesters(newWallet, isNew, cb) {
         if (!isNew) return cb();
         if (wallet.n == 1) return cb();
 
-        $log.info('Adding copayers for BCH wallet config:' + wallet.m + '-' + wallet.n);
+        $log.info('Adding nesters for BCH wallet config:' + wallet.m + '-' + wallet.n);
 
-        walletService.copyCopayers(wallet, newWallet, function(err) {
+        walletService.copyNesters(wallet, newWallet, function(err) {
           if (err) return setErr(err, cb);
 
           return cb();
@@ -176,7 +176,7 @@ angular.module('copayApp.controllers').controller('preferencesCashController',
           walletService.updateRemotePreferences(newWallet);
           pushNotificationsService.updateSubscription(newWallet);
 
-          addCopayers(newWallet, isNew, function(err) {
+          addNesters(newWallet, isNew, function(err) {
             ongoingProcess.set('duplicatingWallet', false);
             if (err)
               return setErr(err);

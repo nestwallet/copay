@@ -14,7 +14,7 @@ msgid "(possible double spend)"
 msgstr ""
 
 #: www/views/modals/txp-details.html:159
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other nester has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr ""
 
 #: www/views/tx-details.html:82
@@ -169,11 +169,11 @@ msgid "All Addresses"
 msgstr ""
 
 #: www/views/modals/wallet-balance.html:18
-msgid "All of your bitcoin wallet balance may not be available for immediate spending."
+msgid "All of your litecoin wallet balance may not be available for immediate spending."
 msgstr ""
 
 #: www/views/tab-receive.html:25
-msgid "All signing devices must be added to this multisig wallet before bitcoin addresses can be created."
+msgid "All signing devices must be added to this multisig wallet before litecoin addresses can be created."
 msgstr ""
 
 #: www/views/tab-scan.html:21
@@ -220,11 +220,11 @@ msgid "An update to this app is available. For your security, please update to t
 msgstr ""
 
 #: www/views/backupWarning.html:14
-msgid "Anyone with your backup phrase can access or spend your bitcoin."
+msgid "Anyone with your backup phrase can access or spend your litecoin."
 msgstr ""
 
 #: www/views/addresses.html:94
-msgid "Approximate Bitcoin network fee to transfer wallet's balance (with normal priority)"
+msgid "Approximate Litecoin network fee to transfer wallet's balance (with normal priority)"
 msgstr ""
 
 #: www/views/backupWarning.html:10
@@ -232,10 +232,10 @@ msgid "Are you being watched?"
 msgstr ""
 
 #: src/js/controllers/preferencesExternal.js:15
-msgid "Are you being watched? Anyone with your recovery phrase can access or spend your bitcoin."
+msgid "Are you being watched? Anyone with your recovery phrase can access or spend your litecoin."
 msgstr ""
 
-#: src/js/controllers/copayers.js:56
+#: src/js/controllers/nesters.js:56
 msgid "Are you sure you want to cancel and delete this wallet?"
 msgstr ""
 
@@ -345,45 +345,45 @@ msgstr ""
 
 #: www/views/addressbook.add.html:38
 #: www/views/includes/incomingDataMenu.html:29
-msgid "Bitcoin Address"
+msgid "Litecoin Address"
 msgstr ""
 
 #: www/views/includes/walletSelector.html:42
 #: www/views/tab-home.html:112
 #: www/views/tab-settings.html:108
-msgid "Bitcoin Cash Wallets"
+msgid "Litecoin Cash Wallets"
 msgstr ""
 
 #: www/views/modals/chooseFeeLevel.html:4
 #: www/views/preferencesFee.html:4
 #: www/views/tab-settings.html:83
-msgid "Bitcoin Network Fee Policy"
+msgid "Litecoin Network Fee Policy"
 msgstr ""
 
 #: www/views/includes/walletSelector.html:11
 #: www/views/tab-home.html:97
 #: www/views/tab-settings.html:100
-msgid "Bitcoin Wallets"
+msgid "Litecoin Wallets"
 msgstr ""
 
 #: src/js/services/incomingData.js:151
-msgid "Bitcoin cash Payment"
+msgid "Litecoin cash Payment"
 msgstr ""
 
 #: www/views/onboarding/tour.html:31
-msgid "Bitcoin is a currency."
+msgid "Litecoin is a currency."
 msgstr ""
 
 #: www/views/onboarding/disclaimer.html:15
-msgid "Bitcoin is different &ndash; it cannot be safely held with a bank or web service."
+msgid "Litecoin is different &ndash; it cannot be safely held with a bank or web service."
 msgstr ""
 
 #: www/views/onboarding/tour.html:18
-msgid "Bitcoin is secure,<br>digital money."
+msgid "Litecoin is secure,<br>digital money."
 msgstr ""
 
 #: www/views/preferencesFee.html:11
-msgid "Bitcoin transactions include a fee collected by miners on the network."
+msgid "Litecoin transactions include a fee collected by miners on the network."
 msgstr ""
 
 #: www/views/buyAmazon.html:108
@@ -413,11 +413,11 @@ msgid "Buy"
 msgstr ""
 
 #: www/views/includes/buyAndSellCard.html:3
-msgid "Buy &amp; Sell Bitcoin"
+msgid "Buy &amp; Sell Litecoin"
 msgstr ""
 
 #: www/views/tab-send.html:40
-msgid "Buy Bitcoin"
+msgid "Buy Litecoin"
 msgstr ""
 
 #: www/views/mercadoLibre.html:22
@@ -430,7 +430,7 @@ msgid "Buy from"
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:40
-msgid "Buying Bitcoin..."
+msgid "Buying Litecoin..."
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:12
@@ -456,7 +456,7 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: www/views/copayers.html:36
+#: www/views/nesters.html:36
 msgid "Cancel invitation"
 msgstr ""
 
@@ -548,7 +548,7 @@ msgstr ""
 #: src/js/controllers/buyAmazon.js:313
 #: src/js/controllers/buyMercadoLibre.js:307
 #: src/js/controllers/confirm.js:549
-#: src/js/controllers/copayers.js:55
+#: src/js/controllers/nesters.js:55
 #: src/js/controllers/topup.js:285
 #: www/views/backup.html:60
 #: www/views/backup.html:79
@@ -612,30 +612,30 @@ msgid "Contribute Translations"
 msgstr ""
 
 #: src/js/controllers/confirm.js:130
-msgid "Copay only supports Bitcoin Cash using new version numbers addresses"
+msgid "Nest only supports Litecoin Cash using new version numbers addresses"
 msgstr ""
 
 #: src/js/services/bwcError.js:62
-msgid "Copayer already in this wallet"
+msgid "Nester already in this wallet"
 msgstr ""
 
 #: src/js/services/bwcError.js:77
-msgid "Copayer already voted on this spend proposal"
+msgid "Nester already voted on this spend proposal"
 msgstr ""
 
 #: src/js/services/bwcError.js:107
-msgid "Copayer data mismatch"
+msgid "Nester data mismatch"
 msgstr ""
 
 #: www/views/includes/walletActivity.html:2
-msgid "Copayer joined"
+msgid "Nester joined"
 msgstr ""
 
 #: www/views/preferencesInformation.html:94
-msgid "Copayer {{$index}}"
+msgid "Nester {{$index}}"
 msgstr ""
 
-#: src/js/controllers/copayers.js:79
+#: src/js/controllers/nesters.js:79
 #: src/js/controllers/export.js:193
 #: www/views/includes/copyToClipboard.html:4
 msgid "Copied to clipboard"
@@ -788,7 +788,7 @@ msgstr ""
 
 #: src/js/controllers/addresses.js:29
 #: src/js/controllers/addresses.js:37
-#: src/js/controllers/copayers.js:30
+#: src/js/controllers/nesters.js:30
 #: src/js/controllers/walletDetails.js:78
 msgid "Could not update wallet"
 msgstr ""
@@ -804,7 +804,7 @@ msgstr ""
 #: www/views/onboarding/tour.html:51
 #: www/views/tab-home.html:89
 #: www/views/tab-send.html:41
-msgid "Create bitcoin wallet"
+msgid "Create litecoin wallet"
 msgstr ""
 
 #: www/views/tab-create-personal.html:131
@@ -816,7 +816,7 @@ msgid "Create shared wallet"
 msgstr ""
 
 #: www/views/tab-create-shared.html:160
-msgid "Create {{formData.requiredCopayers}}-of-{{formData.totalCopayers}} wallet"
+msgid "Create {{formData.requiredNesters}}-of-{{formData.totalNesters}} wallet"
 msgstr ""
 
 #: www/views/modals/txp-details.html:81
@@ -868,7 +868,7 @@ msgstr ""
 msgid "Delete Wallet"
 msgstr ""
 
-#: www/views/copayers.html:59
+#: www/views/nesters.html:59
 msgid "Delete it and create a new one"
 msgstr ""
 
@@ -930,7 +930,7 @@ msgid "Duplicating wallet..."
 msgstr ""
 
 #: www/views/addresses.html:19
-msgid "Each bitcoin wallet can generate billions of addresses from your 12-word backup. A new address is automatically generated and shown each time you receive a payment."
+msgid "Each litecoin wallet can generate billions of addresses from your 12-word backup. A new address is automatically generated and shown each time you receive a payment."
 msgstr ""
 
 #: src/js/services/feeService.js:13
@@ -1019,7 +1019,7 @@ msgstr ""
 #: src/js/controllers/buyMercadoLibre.js:24
 #: src/js/controllers/buyMercadoLibre.js:35
 #: src/js/controllers/confirm.js:307
-#: src/js/controllers/copayers.js:67
+#: src/js/controllers/nesters.js:67
 #: src/js/controllers/create.js:159
 #: src/js/controllers/create.js:172
 #: src/js/controllers/create.js:178
@@ -1385,7 +1385,7 @@ msgstr ""
 
 #: src/js/controllers/create.js:178
 #: src/js/controllers/join.js:144
-msgid "Hardware wallets are not yet supported with Bitcoin Cash"
+msgid "Hardware wallets are not yet supported with Litecoin Cash"
 msgstr ""
 
 #: www/views/modals/mercadolibre-card-details.html:69
@@ -1467,7 +1467,7 @@ msgid "I understand"
 msgstr ""
 
 #: www/views/onboarding/disclaimer.html:21
-msgid "I understand that if this app is moved to another device or deleted, my bitcoin can only be recovered with the backup phrase."
+msgid "I understand that if this app is moved to another device or deleted, my litecoin can only be recovered with the backup phrase."
 msgstr ""
 
 #: www/views/onboarding/disclaimer.html:18
@@ -1603,7 +1603,7 @@ msgstr ""
 msgid "Invalid derivation path"
 msgstr ""
 
-#: src/js/controllers/copayers.js:90
+#: src/js/controllers/nesters.js:90
 msgid "Invitation to share a {{appName}} Wallet"
 msgstr ""
 
@@ -1625,7 +1625,7 @@ msgid "Is this email address correct?"
 msgstr ""
 
 #: www/views/addresses.html:25
-msgid "It's a good idea to avoid reusing addresses - this both protects your privacy and keeps your bitcoins secure against hypothetical attacks by quantum computers."
+msgid "It's a good idea to avoid reusing addresses - this both protects your privacy and keeps your litecoins secure against hypothetical attacks by quantum computers."
 msgstr ""
 
 #: src/js/controllers/backup.js:76
@@ -1636,7 +1636,7 @@ msgstr ""
 msgid "Join"
 msgstr ""
 
-#: src/js/controllers/copayers.js:85
+#: src/js/controllers/nesters.js:85
 msgid "Join my {{appName}} Wallet. Here is the invitation code: {{secret}} You can download {{appName}} for your phone or desktop at {{appUrl}}"
 msgstr ""
 
@@ -1734,7 +1734,7 @@ msgstr ""
 msgid "Matches:"
 msgstr ""
 
-#: www/views/includes/copayers.html:4
+#: www/views/includes/nesters.html:4
 #: www/views/preferencesInformation.html:85
 msgid "Me"
 msgstr ""
@@ -1841,7 +1841,7 @@ msgid "No access key defined"
 msgstr ""
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no bitcoin."
+msgid "No backup, no litecoin."
 msgstr ""
 
 #: www/views/addressbook.html:19
@@ -1898,7 +1898,7 @@ msgid "No wallets available to receive funds"
 msgstr ""
 
 #: www/views/preferencesCash.html:15
-msgid "No wallets eligible for Bitcoin Cash support"
+msgid "No wallets eligible for Litecoin Cash support"
 msgstr ""
 
 #: src/js/controllers/preferencesCash.js:58
@@ -1943,7 +1943,7 @@ msgid "Note: if this BCH wallet was duplicated from a BTC wallet, they share the
 msgstr ""
 
 #: www/views/modals/wallets.html:25
-msgid "Notice: only 1-1 (single signature) wallets can be used for sell bitcoin"
+msgid "Notice: only 1-1 (single signature) wallets can be used for sell litecoin"
 msgstr ""
 
 #: www/views/preferencesNotifications.html:3
@@ -2083,7 +2083,7 @@ msgid "Paste the backup plain text code"
 msgstr ""
 
 #: www/views/bitpayCardIntro.html:28
-msgid "Pay 0% fees to turn bitcoin into dollars."
+msgid "Pay 0% fees to turn litecoin into dollars."
 msgstr ""
 
 #: www/views/modals/paypro.html:18
@@ -2144,7 +2144,7 @@ msgid "Payment accepted. It will be broadcasted by Glidera. In case there is a p
 msgstr ""
 
 #: src/js/services/incomingData.js:152
-msgid "Payment address was translated to new Bitcoin Cash address format:"
+msgid "Payment address was translated to new Litecoin Cash address format:"
 msgstr ""
 
 #: www/views/modals/txp-details.html:107
@@ -2198,7 +2198,7 @@ msgid "Please tap each word in the correct order."
 msgstr ""
 
 #: src/js/services/bwcError.js:101
-msgid "Please upgrade Copay to perform this action"
+msgid "Please upgrade Nest to perform this action"
 msgstr ""
 
 #: www/views/walletDetails.html:142
@@ -2498,7 +2498,7 @@ msgid "Search Transactions"
 msgstr ""
 
 #: www/views/tab-send.html:18
-msgid "Search or enter bitcoin address"
+msgid "Search or enter litecoin address"
 msgstr ""
 
 #: www/views/modals/search.html:16
@@ -2530,7 +2530,7 @@ msgid "Self-signed Certificate"
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:41
-msgid "Selling Bitcoin..."
+msgid "Selling Litecoin..."
 msgstr ""
 
 #: www/views/feedback/send.html:13
@@ -2651,8 +2651,8 @@ msgstr ""
 msgid "Share the love by inviting your friends."
 msgstr ""
 
-#: www/views/copayers.html:20
-msgid "Share this invitation with your copayers"
+#: www/views/nesters.html:20
+msgid "Share this invitation with your nesters"
 msgstr ""
 
 #: src/js/controllers/feedback/complete.js:5
@@ -2683,7 +2683,7 @@ msgid "Show advanced options"
 msgstr ""
 
 #: www/views/tab-send.html:42
-msgid "Show bitcoin address"
+msgid "Show litecoin address"
 msgstr ""
 
 #: www/views/tab-send.html:64
@@ -2731,7 +2731,7 @@ msgid "Slide to send"
 msgstr ""
 
 #: www/views/preferencesCash.html:56
-msgid "Some of your wallets are not eligible for Bitcoin Cash support. You can try to access BCH funds from these wallets using the"
+msgid "Some of your wallets are not eligible for Litecoin Cash support. You can try to access BCH funds from these wallets using the"
 msgstr ""
 
 #: src/js/controllers/create.js:86
@@ -2752,11 +2752,11 @@ msgid "Spending Password needed"
 msgstr ""
 
 #: www/views/walletDetails.html:173
-msgid "Spending this balance will need significant Bitcoin network fees"
+msgid "Spending this balance will need significant Litecoin network fees"
 msgstr ""
 
 #: www/views/tab-send.html:33
-msgid "Start sending bitcoin"
+msgid "Start sending litecoin"
 msgstr ""
 
 #: www/views/lockSetup.html:3
@@ -2794,7 +2794,7 @@ msgid "THIS ACTION CANNOT BE REVERSED"
 msgstr ""
 
 #: www/views/onboarding/welcome.html:5
-msgid "Take control of your money,<br>get started with bitcoin."
+msgid "Take control of your money,<br>get started with litecoin."
 msgstr ""
 
 #: www/views/walletDetails.html:132
@@ -2850,15 +2850,15 @@ msgid "The Ledger Chrome application is not installed"
 msgstr ""
 
 #: www/views/modals/wallet-balance.html:55
-msgid "The amount of bitcoin immediately spendable from this wallet."
+msgid "The amount of litecoin immediately spendable from this wallet."
 msgstr ""
 
 #: www/views/modals/wallet-balance.html:93
-msgid "The amount of bitcoin stored in this wallet that is allocated as inputs to your pending transaction proposals. The amount is determined using unspent transaction outputs associated with this wallet and may be more than the actual amounts associated with your pending transaction proposals."
+msgid "The amount of litecoin stored in this wallet that is allocated as inputs to your pending transaction proposals. The amount is determined using unspent transaction outputs associated with this wallet and may be more than the actual amounts associated with your pending transaction proposals."
 msgstr ""
 
 #: www/views/modals/wallet-balance.html:74
-msgid "The amount of bitcoin stored in this wallet with less than 1 blockchain confirmation."
+msgid "The amount of litecoin stored in this wallet with less than 1 blockchain confirmation."
 msgstr ""
 
 #: www/views/tab-import-phrase.html:5
@@ -2913,7 +2913,7 @@ msgid "The spend proposal is not pending"
 msgstr ""
 
 #: www/views/modals/wallet-balance.html:36
-msgid "The total amount of bitcoin stored in this wallet."
+msgid "The total amount of litecoin stored in this wallet."
 msgstr ""
 
 #: www/views/preferencesHistory.html:27
@@ -2944,11 +2944,11 @@ msgid "This app is fantastic!"
 msgstr ""
 
 #: www/views/onboarding/tour.html:47
-msgid "This app stores your bitcoin with cutting-edge security."
+msgid "This app stores your litecoin with cutting-edge security."
 msgstr ""
 
 #: src/js/controllers/confirm.js:523
-msgid "This bitcoin payment request has expired."
+msgid "This litecoin payment request has expired."
 msgstr ""
 
 #: www/views/join.html:133
@@ -2962,7 +2962,7 @@ msgid "This recovery phrase was created with a password. To recover this wallet 
 msgstr ""
 
 #: www/views/tx-details.html:91
-msgid "This transaction amount is too small compared to current Bitcoin network fees. Spending these funds will need a Bitcoin network fee cost comparable to the funds itself."
+msgid "This transaction amount is too small compared to current Litecoin network fees. Spending these funds will need a Litecoin network fee cost comparable to the funds itself."
 msgstr ""
 
 #: www/views/tx-details.html:87
@@ -2989,11 +2989,11 @@ msgid "To"
 msgstr ""
 
 #: www/views/tab-send.html:37
-msgid "To get started, buy bitcoin or share your address. You can receive bitcoin from any wallet or service."
+msgid "To get started, buy litecoin or share your address. You can receive litecoin from any wallet or service."
 msgstr ""
 
 #: www/views/tab-send.html:38
-msgid "To get started, you'll need to create a bitcoin wallet and get some bitcoin."
+msgid "To get started, you'll need to create a litecoin wallet and get some litecoin."
 msgstr ""
 
 #: src/js/services/bitpayAccountService.js:73
@@ -3020,7 +3020,7 @@ msgid "Total Locked Balance"
 msgstr ""
 
 #: www/views/tab-create-shared.html:35
-msgid "Total number of copayers"
+msgid "Total number of nesters"
 msgstr ""
 
 #: www/views/addresses.html:81
@@ -3085,7 +3085,7 @@ msgid "Try again in {{expires}}"
 msgstr ""
 
 #: www/views/bitpayCardIntro.html:18
-msgid "Turn bitcoin into dollars, swipe anywhere Visa<sup>&reg;</sup> is accepted."
+msgid "Turn litecoin into dollars, swipe anywhere Visa<sup>&reg;</sup> is accepted."
 msgstr ""
 
 #: www/views/tab-import-phrase.html:17
@@ -3195,7 +3195,7 @@ msgid "WARNING: UNTRUSTED CERTIFICATE"
 msgstr ""
 
 #: www/views/preferencesPrivateKey.html:14
-msgid "WARNING: Your extended private keys are all that is needed to access your bitcoin funds. Be sure to protect your private keys and store them only on secure devices. BitPay does not have access to your private keys, so you alone are responsible for your keys. If you share key access with external services, you take responsibility for the risk of theft or breach. Only advanced users should handle extended private keys directly."
+msgid "WARNING: Your extended private keys are all that is needed to access your litecoin funds. Be sure to protect your private keys and store them only on secure devices. BitPay does not have access to your private keys, so you alone are responsible for your keys. If you share key access with external services, you take responsibility for the risk of theft or breach. Only advanced users should handle extended private keys directly."
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:15
@@ -3206,11 +3206,11 @@ msgstr ""
 msgid "Waiting for Trezor..."
 msgstr ""
 
-#: www/views/copayers.html:48
-msgid "Waiting for copayers"
+#: www/views/nesters.html:48
+msgid "Waiting for nesters"
 msgstr ""
 
-#: www/views/copayers.html:53
+#: www/views/nesters.html:53
 msgid "Waiting..."
 msgstr ""
 
@@ -3302,7 +3302,7 @@ msgstr ""
 msgid "Wallet created"
 msgstr ""
 
-#: www/views/copayers.html:58
+#: www/views/nesters.html:58
 msgid "Wallet incomplete and broken"
 msgstr ""
 
@@ -3448,7 +3448,7 @@ msgid "You can make contributions by signing up on our Crowdin community transla
 msgstr ""
 
 #: www/views/tab-scan.html:16
-msgid "You can scan bitcoin addresses, payment requests, paper wallets, and more."
+msgid "You can scan litecoin addresses, payment requests, paper wallets, and more."
 msgstr ""
 
 #: src/js/controllers/preferencesAbout.js:14
@@ -3456,7 +3456,7 @@ msgid "You can see the latest developments and contribute to this open source ap
 msgstr ""
 
 #: www/views/onboarding/tour.html:19
-msgid "You can spend bitcoin at millions of websites and stores worldwide."
+msgid "You can spend litecoin at millions of websites and stores worldwide."
 msgstr ""
 
 #: www/views/backup.html:15
@@ -3468,7 +3468,7 @@ msgid "You can trade it for other currencies like US Dollars, Euros, or Pounds."
 msgstr ""
 
 #: www/views/onboarding/tour.html:46
-msgid "You control your bitcoin."
+msgid "You control your litecoin."
 msgstr ""
 
 #: www/views/modals/chooseFeeLevel.html:64
@@ -3493,11 +3493,11 @@ msgid "Your Gift Cards"
 msgstr ""
 
 #: www/views/includes/confirmBackupPopup.html:6
-msgid "Your bitcoin wallet is backed up!"
+msgid "Your litecoin wallet is backed up!"
 msgstr ""
 
 #: www/views/tab-home.html:50
-msgid "Your bitcoin wallet is ready!"
+msgid "Your litecoin wallet is ready!"
 msgstr ""
 
 #: www/views/modals/chooseFeeLevel.html:61
@@ -3585,11 +3585,11 @@ msgid "{{amountStr}} for Mercado Livre Brazil Gift Card"
 msgstr ""
 
 #: www/views/preferencesBwsUrl.html:21
-msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bws.bitpay.com (BitPay's public BWS instance)."
+msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Nester synchronization. The default configuration points to http://107.189.10.11:3232 (BitPay's public BWS instance)."
 msgstr ""
 
 #: src/js/controllers/confirm.js:408
-msgid "{{fee}} will be deducted for bitcoin networking fees."
+msgid "{{fee}} will be deducted for litecoin networking fees."
 msgstr ""
 
 #: www/views/confirm.html:85
@@ -3600,7 +3600,7 @@ msgstr ""
 msgid "{{updatingTxHistoryProgress}} transactions downloaded"
 msgstr ""
 
-#: www/views/copayers.html:46
+#: www/views/nesters.html:46
 #: www/views/includes/walletInfo.html:18
 #: www/views/preferencesCash.html:33
 msgid "{{wallet.m}}-of-{{wallet.n}}"

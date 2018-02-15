@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.directives')
+angular.module('nestApp.directives')
   .directive('clickToAccept', function() {
     return {
       restrict: 'E',

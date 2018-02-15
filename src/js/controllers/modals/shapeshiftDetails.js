@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('shapeshiftDetailsController', function($scope, shapeshiftService, externalLinkService) {
+angular.module('nestApp.controllers').controller('shapeshiftDetailsController', function($scope, shapeshiftService, externalLinkService) {
 
   $scope.remove = function() {
     shapeshiftService.saveShapeshift($scope.ss, {

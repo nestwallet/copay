@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('shapeshiftController',
+angular.module('nestApp.controllers').controller('shapeshiftController',
   function($rootScope, $scope, $timeout, $log, $ionicScrollDelegate, $ionicModal, lodash, shapeshiftService, externalLinkService) {
 
     var listeners = [];

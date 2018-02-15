@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('buyMercadoLibreController', function($scope, $log, $state, $timeout, $filter, $ionicHistory, $ionicConfig, $ionicModal, lodash, mercadoLibreService, popupService, profileService, ongoingProcess, configService, walletService, payproService, bwcError, externalLinkService, platformInfo, txFormatService, gettextCatalog, emailService) {
+angular.module('nestApp.controllers').controller('buyMercadoLibreController', function($scope, $log, $state, $timeout, $filter, $ionicHistory, $ionicConfig, $ionicModal, lodash, mercadoLibreService, popupService, profileService, ongoingProcess, configService, walletService, payproService, bwcError, externalLinkService, platformInfo, txFormatService, gettextCatalog, emailService) {
 
   var coin = 'btc';
   var amount;
@@ -140,7 +140,7 @@ angular.module('copayApp.controllers').controller('buyMercadoLibreController', f
     }
 
     var outputs = [];
-    var toAddress = invoice.bitcoinAddress;
+    var toAddress = invoice.litecoinAddress;
     var amountSat = parseInt((invoice.btcDue * 100000000).toFixed(0)); // BTC to Satoshi
 
     outputs.push({

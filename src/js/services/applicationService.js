@@ -1,5 +1,5 @@
 'use strict';
-angular.module('copayApp.services')
+angular.module('nestApp.services')
   .factory('applicationService', function($rootScope, $timeout, $ionicHistory, $ionicModal, platformInfo, fingerprintService, openURLService, configService, $state) {
     var root = {};
 

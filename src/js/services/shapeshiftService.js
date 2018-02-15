@@ -1,5 +1,5 @@
 'use strict';
-angular.module('copayApp.services').factory('shapeshiftService', function($http, $log, $window, lodash, moment, storageService, configService, platformInfo, nextStepsService, homeIntegrationsService) {
+angular.module('nestApp.services').factory('shapeshiftService', function($http, $log, $window, lodash, moment, storageService, configService, platformInfo, nextStepsService, homeIntegrationsService) {
   var root = {};
   var credentials = {};
 

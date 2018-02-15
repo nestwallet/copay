@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').factory('walletService', function($log, $timeout, lodash, trezor, ledger, intelTEE, storageService, configService, rateService, uxLanguage, $filter, gettextCatalog, bwcError, $ionicPopup, fingerprintService, ongoingProcess, gettext, $rootScope, txFormatService, $ionicModal, $state, bwcService, bitcore, bitcoreCash, popupService, feeService) {
+angular.module('nestApp.services').factory('walletService', function($log, $timeout, lodash, trezor, ledger, intelTEE, storageService, configService, rateService, uxLanguage, $filter, gettextCatalog, bwcError, $ionicPopup, fingerprintService, ongoingProcess, gettext, $rootScope, txFormatService, $ionicModal, $state, bwcService, bitcore, bitcoreCash, popupService, feeService) {
 
   // Ratio low amount warning (fee/amount) in incoming TX
   var LOW_AMOUNT_RATIO = 0.15;
@@ -144,7 +144,7 @@ angular.module('copayApp.services').factory('walletService', function($log, $tim
         }
 
         var action = lodash.find(tx.actions, {
-          copayerId: tx.wallet.copayerId
+          nesterId: tx.wallet.nesterId
         });
 
         if (!action && tx.status == 'pending') {
@@ -854,7 +854,7 @@ angular.module('copayApp.services').factory('walletService', function($log, $tim
 
     wallet.scanning = true;
     wallet.startScan({
-      includeCopayerBranches: true,
+      includeNesterBranches: true,
     }, function(err) {
       return cb(err);
     });
@@ -1286,30 +1286,30 @@ angular.module('copayApp.services').factory('walletService', function($log, $tim
   root.getProtocolHandler = function(wallet) {
 
     if (wallet.coin== 'bch') {
-      return 'bitcoincash';
+      return 'litecoincash';
     } else {
-      return 'bitcoin';
+      return 'litecoin';
     }
   }
 
 
-  root.copyCopayers = function(wallet, newWallet, cb) {
+  root.copyNesters = function(wallet, newWallet, cb) {
     var c = wallet.credentials;
 
     var walletPrivKey = bitcore.PrivateKey.fromString(c.walletPrivKey);
 
-    var copayer = 1,
+    var nester = 1,
       i = 0,
       l = c.publicKeyRing.length;
     var mainErr = null;
 
     lodash.each(c.publicKeyRing, function(item) {
-      var name = item.copayerName || ('copayer ' + copayer++);
+      var name = item.nesterName || ('nester ' + nester++);
       newWallet._doJoinWallet(newWallet.credentials.walletId, walletPrivKey, item.xPubKey, item.requestPubKey, name, {
         coin: newWallet.credentials.coin,
       }, function(err) {
-        //Ignore error is copayer already in wallet
-        if (err && !(err instanceof errors.COPAYER_IN_WALLET)) {
+        //Ignore error is nester already in wallet
+        if (err && !(err instanceof errors.NESTER_IN_WALLET)) {
           mainErr = err;
         }
 

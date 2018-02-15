@@ -23,8 +23,8 @@
           <input type="text"
             placeholder="Satoshi"
             ng-model="formData.myName"
-            ng-required="formData.totalCopayers != 1"
-            ng-disabled="formData.totalCopayers == 1"
+            ng-required="formData.totalNesters != 1"
+            ng-disabled="formData.totalNesters == 1"
             ng-focus="formFocus('my-name')"
             ng-blur="formFocus(false)">
         </label>
@@ -33,10 +33,10 @@
 
         <label class="item item-input item-select">
           <div class="input-label" translate>
-            Total number of copayers
+            Total number of nesters
           </div>
-          <select class="m10t" ng-model="formData.totalCopayers" ng-options="totalCopayers as totalCopayers for totalCopayers in TCValues"
-            ng-change="setTotalCopayers(formData.totalCopayers)">
+          <select class="m10t" ng-model="formData.totalNesters" ng-options="totalNesters as totalNesters for totalNesters in TCValues"
+            ng-change="setTotalNesters(formData.totalNesters)">
           </select>
         </label>
 
@@ -45,8 +45,8 @@
             Required number of signatures
           </div>
           <select class="m10t"
-            ng-model="formData.requiredCopayers" ng-options="requiredCopayers as requiredCopayers for requiredCopayers in RCValues"
-            ng-disabled="formData.totalCopayers == 1">
+            ng-model="formData.requiredNesters" ng-options="requiredNesters as requiredNesters for requiredNesters in RCValues"
+            ng-disabled="formData.totalNesters == 1">
           </select>
         </label>
 
@@ -157,7 +157,7 @@
 
       <button type="submit" class="button button-standard button-primary"
         ng-disabled="setupForm.$invalid || ((encrypt && !formData.passwordSaved) || encrypt && ((formData.seedSource.id == 'new' && !formData.createPassphrase) || (formData.seedSource.id == 'set' && !formData.passphrase)))">
-        <span translate>Create {{formData.requiredCopayers}}-of-{{formData.totalCopayers}} wallet</span>
+        <span translate>Create {{formData.requiredNesters}}-of-{{formData.totalNesters}} wallet</span>
       </button>
     </form>
   </ion-content>

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('mercadoLibreCardsController',
+angular.module('nestApp.controllers').controller('mercadoLibreCardsController',
   function($scope, $timeout, $ionicModal, $log, $ionicScrollDelegate, lodash, mercadoLibreService, platformInfo, externalLinkService, popupService, ongoingProcess, timeService) {
 
     var updateGiftCard;

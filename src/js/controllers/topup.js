@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('topUpController', function($scope, $log, $state, $timeout, $ionicHistory, $ionicConfig, $ionicModal, lodash, popupService, profileService, ongoingProcess, walletService, configService, platformInfo, bitpayService, bitpayCardService, payproService, bwcError, txFormatService, sendMaxService, gettextCatalog, externalLinkService) {
+angular.module('nestApp.controllers').controller('topUpController', function($scope, $log, $state, $timeout, $ionicHistory, $ionicConfig, $ionicModal, lodash, popupService, profileService, ongoingProcess, walletService, configService, platformInfo, bitpayService, bitpayCardService, payproService, bwcError, txFormatService, sendMaxService, gettextCatalog, externalLinkService) {
 
   var FEE_TOO_HIGH_LIMIT_PER = 15;
   $scope.isCordova = platformInfo.isCordova;
@@ -118,7 +118,7 @@ angular.module('copayApp.controllers').controller('topUpController', function($s
     }
 
     var outputs = [];
-    var toAddress = invoice.bitcoinAddress;
+    var toAddress = invoice.litecoinAddress;
     var amountSat = parseInt((invoice.btcDue * 100000000).toFixed(0)); // BTC to Satoshi
 
     outputs.push({

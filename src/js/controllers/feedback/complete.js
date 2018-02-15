@@ -1,13 +1,13 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('completeController', function($scope, $stateParams, $timeout, $log, $ionicHistory, $state, $ionicNavBarDelegate, $ionicConfig, platformInfo, configService, storageService, lodash, appConfigService, gettextCatalog) {
+angular.module('nestApp.controllers').controller('completeController', function($scope, $stateParams, $timeout, $log, $ionicHistory, $state, $ionicNavBarDelegate, $ionicConfig, platformInfo, configService, storageService, lodash, appConfigService, gettextCatalog) {
   $scope.isCordova = platformInfo.isCordova;
   $scope.title = gettextCatalog.getString("Share {{appName}}", {
     appName: appConfigService.nameCase
   });
 
   var defaults = configService.getDefaults();
-  var downloadUrl = appConfigService.name == 'copay' ? defaults.download.copay.url : defaults.download.bitpay.url;
+  var downloadUrl = appConfigService.name == 'nest' ? defaults.download.nest.url : defaults.download.bitpay.url;
 
   function quickFeedback(cb) {
     window.plugins.spinnerDialog.show();

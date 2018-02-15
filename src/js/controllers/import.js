@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('importController',
+angular.module('nestApp.controllers').controller('importController',
   function($scope, $timeout, $log, $state, $stateParams, $ionicHistory, $ionicScrollDelegate, profileService, configService, sjcl, ledger, trezor, derivationPathHelper, platformInfo, bwcService, ongoingProcess, walletService, popupService, gettextCatalog, appConfigService, hwWallet) {
 
     var reader = new FileReader();
@@ -18,7 +18,7 @@ angular.module('copayApp.controllers').controller('importController',
       $scope.formData.account = 1;
       $scope.formData.coin = $stateParams.coin;
       $scope.importErr = false;
-      $scope.isCopay = appConfigService.name == 'copay';
+      $scope.isNest = appConfigService.name == 'nest';
       $scope.fromHardwareWallet = {
         value: false
       };

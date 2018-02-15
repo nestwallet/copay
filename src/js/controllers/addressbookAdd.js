@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('addressbookAddController', function($scope, $state, $stateParams, $timeout, $ionicHistory, gettextCatalog, addressbookService, popupService) {
+angular.module('nestApp.controllers').controller('addressbookAddController', function($scope, $state, $stateParams, $timeout, $ionicHistory, gettextCatalog, addressbookService, popupService) {
 
   $scope.fromSendTab = $stateParams.fromSendTab;
 
@@ -14,7 +14,7 @@ angular.module('copayApp.controllers').controller('addressbookAddController', fu
     $timeout(function() {
       var form = addressbookForm;
       if (data && form) {
-        data = data.replace(/^bitcoin(cash)?:/, '');
+        data = data.replace(/^litecoin(cash)?:/, '');
         form.address.$setViewValue(data);
         form.address.$isValid = true;
         form.address.$render();

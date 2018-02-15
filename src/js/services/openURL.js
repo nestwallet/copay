@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').factory('openURLService', function($rootScope, $ionicHistory, $document, $log, $state, platformInfo, lodash, profileService, incomingData, appConfigService) {
+angular.module('nestApp.services').factory('openURLService', function($rootScope, $ionicHistory, $document, $log, $state, platformInfo, lodash, profileService, incomingData, appConfigService) {
   var root = {};
 
   var handleOpenURL = function(args) {
@@ -55,12 +55,12 @@ angular.module('copayApp.services').factory('openURLService', function($rootScop
     } else if (platformInfo.isNW) {
       var gui = require('nw.gui');
 
-      // This event is sent to an existent instance of Copay (only for standalone apps)
+      // This event is sent to an existent instance of Nest (only for standalone apps)
       gui.App.on('open', function(pathData) {
-        if (pathData.indexOf(/^bitcoin(cash)?:/) != -1) {
-          $log.debug('Bitcoin URL found');
+        if (pathData.indexOf(/^litecoin(cash)?:/) != -1) {
+          $log.debug('Litecoin URL found');
           handleOpenURL({
-            url: pathData.substring(pathData.indexOf(/^bitcoin(cash)?:/))
+            url: pathData.substring(pathData.indexOf(/^litecoin(cash)?:/))
           });
         } else if (pathData.indexOf(appConfigService.name + '://') != -1) {
           $log.debug(appConfigService.name + ' URL found');
@@ -70,7 +70,7 @@ angular.module('copayApp.services').factory('openURLService', function($rootScop
         }
       });
 
-      // Used at the startup of Copay
+      // Used at the startup of Nest
       var argv = gui.App.argv;
       if (argv && argv[0]) {
         handleOpenURL({
@@ -83,9 +83,9 @@ angular.module('copayApp.services').factory('openURLService', function($rootScop
 
       if (navigator.registerProtocolHandler) {
         $log.debug('Registering Browser handlers base:' + base);
-        navigator.registerProtocolHandler('bitcoin', url, 'Copay Bitcoin Handler');
-        navigator.registerProtocolHandler('web+bitcoincash', url, 'Copay Bitcoin Cash Handler');
-        navigator.registerProtocolHandler('web+copay', url, 'Copay Wallet Handler');
+        navigator.registerProtocolHandler('litecoin', url, 'Nest Litecoin Handler');
+        navigator.registerProtocolHandler('web+litecoincash', url, 'Nest Litecoin Cash Handler');
+        navigator.registerProtocolHandler('web+nest', url, 'Nest Wallet Handler');
         navigator.registerProtocolHandler('web+bitpay', url, 'BitPay Wallet Handler');
       }
     }

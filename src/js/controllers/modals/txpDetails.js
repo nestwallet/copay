@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('txpDetailsController', function($scope, $rootScope, $timeout, $interval, $log, ongoingProcess, platformInfo, $ionicScrollDelegate, txFormatService, bwcError, gettextCatalog, lodash, walletService, popupService, $ionicHistory, feeService) {
+angular.module('nestApp.controllers').controller('txpDetailsController', function($scope, $rootScope, $timeout, $interval, $log, ongoingProcess, platformInfo, $ionicScrollDelegate, txFormatService, bwcError, gettextCatalog, lodash, walletService, popupService, $ionicHistory, feeService) {
   var isGlidera = $scope.isGlidera;
   var GLIDERA_LOCK_TIME = 6 * 60 * 60;
   var now = Math.floor(Date.now() / 1000);
@@ -10,8 +10,8 @@ angular.module('copayApp.controllers').controller('txpDetailsController', functi
     $scope.loading = null;
     $scope.isCordova = platformInfo.isCordova;
     $scope.isWindowsPhoneApp = platformInfo.isCordova && platformInfo.isWP;
-    $scope.copayers = $scope.wallet.status.wallet.copayers;
-    $scope.copayerId = $scope.wallet.credentials.copayerId;
+    $scope.nesters = $scope.wallet.status.wallet.nesters;
+    $scope.nesterId = $scope.wallet.credentials.nesterId;
     $scope.isShared = $scope.wallet.credentials.n > 1;
     $scope.canSign = $scope.wallet.canSign() || $scope.wallet.isPrivKeyExternal();
     $scope.color = $scope.wallet.color;
@@ -76,7 +76,7 @@ angular.module('copayApp.controllers').controller('txpDetailsController', functi
         type: action.type,
         time: action.createdOn,
         description: actionDescriptions[action.type],
-        by: action.copayerName
+        by: action.nesterName
       });
     });
 
@@ -222,7 +222,7 @@ angular.module('copayApp.controllers').controller('txpDetailsController', functi
       }
 
       var action = lodash.find(tx.actions, {
-        copayerId: $scope.wallet.credentials.copayerId
+        nesterId: $scope.wallet.credentials.nesterId
       });
 
       $scope.tx = txFormatService.processTx($scope.wallet.coin, tx);
@@ -230,7 +230,7 @@ angular.module('copayApp.controllers').controller('txpDetailsController', functi
       if (!action && tx.status == 'pending')
         $scope.tx.pendingForUs = true;
 
-      $scope.updateCopayerList();
+      $scope.updateNesterList();
       initActionList();
       $scope.$apply();
     });
@@ -251,10 +251,10 @@ angular.module('copayApp.controllers').controller('txpDetailsController', functi
     });
   });
 
-  $scope.updateCopayerList = function() {
-    lodash.map($scope.copayers, function(cp) {
+  $scope.updateNesterList = function() {
+    lodash.map($scope.nesters, function(cp) {
       lodash.each($scope.tx.actions, function(ac) {
-        if (cp.id == ac.copayerId) {
+        if (cp.id == ac.nesterId) {
           cp.action = ac.type;
         }
       });

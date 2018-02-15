@@ -1,5 +1,5 @@
 'use strict';
-angular.module('copayApp.services')
+angular.module('nestApp.services')
   .factory('uxLanguage', function languageService($log, lodash, gettextCatalog, amMoment, configService) {
     var root = {};
 

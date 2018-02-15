@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').factory('incomingData', function($log, $state, $timeout, $ionicHistory, bitcore, bitcoreCash, $rootScope, payproService, scannerService, appConfigService, popupService, gettextCatalog) {
+angular.module('nestApp.services').factory('incomingData', function($log, $state, $timeout, $ionicHistory, bitcore, bitcoreCash, $rootScope, payproService, scannerService, appConfigService, popupService, gettextCatalog) {
 
   var root = {};
 
@@ -21,7 +21,7 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
       var value = match[0].replace(',', '.');
       var newUri = data.replace(regex, value);
 
-      // mobile devices, uris like copay://glidera
+      // mobile devices, uris like nest://glidera
       newUri.replace('://', ':');
 
       return newUri;
@@ -69,11 +69,11 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
       }, 100);
     }
     // data extensions for Payment Protocol with non-backwards-compatible request
-    if ((/^bitcoin(cash)?:\?r=[\w+]/).exec(data)) {
+    if ((/^litecoin(cash)?:\?r=[\w+]/).exec(data)) {
       var coin = 'btc';
-      if (data.indexOf('bitcoincash') === 0) coin = 'bch';
+      if (data.indexOf('litecoincash') === 0) coin = 'bch';
 
-      data = decodeURIComponent(data.replace(/bitcoin(cash)?:\?r=/, ''));
+      data = decodeURIComponent(data.replace(/litecoin(cash)?:\?r=/, ''));
 
       payproService.getPayProDetails(data, function(err, details) {
         if (err) {
@@ -86,7 +86,7 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
 
     data = sanitizeUri(data);
 
-    // Bitcoin  URL
+    // Litecoin  URL
     if (bitcore.URI.isValid(data)) {
 
         var coin = 'btc';
@@ -141,11 +141,11 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
         }
         return true;
 
-    // Cash URI with bitcoin core address version number?
-    } else if (bitcore.URI.isValid(data.replace(/^bitcoincash:/,'bitcoin:'))) {
-        $log.debug('Handling bitcoincash URI with legacy address');
+    // Cash URI with litecoin core address version number?
+    } else if (bitcore.URI.isValid(data.replace(/^litecoincash:/,'litecoin:'))) {
+        $log.debug('Handling litecoincash URI with legacy address');
         var coin = 'bch';
-        var parsed = new bitcore.URI(data.replace(/^bitcoincash:/,'bitcoin:'));
+        var parsed = new bitcore.URI(data.replace(/^litecoincash:/,'litecoin:'));
 
         var oldAddr = parsed.address ? parsed.address.toString() : '';
         if (!oldAddr) return false;
@@ -158,8 +158,8 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
         // Translate address
         $log.debug('address transalated to:' + addr);
         popupService.showConfirm(
-          gettextCatalog.getString('Bitcoin cash Payment'),
-          gettextCatalog.getString('Payment address was translated to new Bitcoin Cash address format: ' + addr),
+          gettextCatalog.getString('Litecoin cash Payment'),
+          gettextCatalog.getString('Payment address was translated to new Litecoin Cash address format: ' + addr),
           gettextCatalog.getString('OK'),
           gettextCatalog.getString('Cancel'),
           function(ret) {
@@ -204,7 +204,7 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
       if ($state.includes('tabs.scan')) {
         root.showMenu({
           data: data,
-          type: 'bitcoinAddress',
+          type: 'litecoinAddress',
           coin: 'btc',
         });
       } else {
@@ -214,7 +214,7 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
       if ($state.includes('tabs.scan')) {
         root.showMenu({
           data: data,
-          type: 'bitcoinAddress',
+          type: 'litecoinAddress',
           coin: 'bch',
         });
       } else {
@@ -286,7 +286,7 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
       return true;
 
       // Join
-    } else if (data && data.match(/^copay:[0-9A-HJ-NP-Za-km-z]{70,80}$/)) {
+    } else if (data && data.match(/^nest:[0-9A-HJ-NP-Za-km-z]{70,80}$/)) {
       $state.go('tabs.home', {}, {
         'reload': true,
         'notify': $state.current.name == 'tabs.home' ? false : true

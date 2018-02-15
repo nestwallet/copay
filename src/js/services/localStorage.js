@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services')
+angular.module('nestApp.services')
   .factory('localStorageService', function(platformInfo, $timeout, $log, lodash) {
     var isNW = platformInfo.isNW;
     var isChromeApp = platformInfo.isChromeApp;

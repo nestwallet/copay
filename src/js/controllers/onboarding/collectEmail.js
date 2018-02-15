@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('collectEmailController', function($scope, $state, $log, $timeout, $http, $httpParamSerializer, $ionicConfig, profileService, configService, walletService, appConfigService, emailService) {
+angular.module('nestApp.controllers').controller('collectEmailController', function($scope, $state, $log, $timeout, $http, $httpParamSerializer, $ionicConfig, profileService, configService, walletService, appConfigService, emailService) {
 
   var wallet, walletId;
   $scope.data = {};

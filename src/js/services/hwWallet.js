@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services')
+angular.module('nestApp.services')
   .factory('hwWallet', function($log, bwcService) {
     var root = {};
 

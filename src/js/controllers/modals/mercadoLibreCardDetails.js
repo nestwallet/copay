@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('mercadoLibreCardDetailsController', function($scope, mercadoLibreService, externalLinkService, gettextCatalog) {
+angular.module('nestApp.controllers').controller('mercadoLibreCardDetailsController', function($scope, mercadoLibreService, externalLinkService, gettextCatalog) {
 
   $scope.remove = function() {
     mercadoLibreService.savePendingGiftCard($scope.card, {

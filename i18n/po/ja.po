@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: copay\n"
+"Project-Id-Version: nest\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: crowdin.com\n"
-"X-Crowdin-Project: copay\n"
+"X-Crowdin-Project: nest\n"
 "X-Crowdin-Language: ja\n"
 "X-Crowdin-File: template.pot\n"
 "Last-Translator: cmgustavo83\n"
@@ -23,7 +23,7 @@ msgid "(possible double spend)"
 msgstr "(二重払い可能性あり)"
 
 #: www/views/modals/txp-details.html:159
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other nester has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr "* 送金の提案の取下げは①他のウォレット参加者に署名されていなかった場合、提案者に提案を取り下げることができます。②提案の起案から24時間が経っても解決しなかった場合、全員に取り下げることができます。"
 
 #: www/views/tx-details.html:82
@@ -178,11 +178,11 @@ msgid "All Addresses"
 msgstr "全アドレス"
 
 #: www/views/modals/wallet-balance.html:18
-msgid "All of your bitcoin wallet balance may not be available for immediate spending."
+msgid "All of your litecoin wallet balance may not be available for immediate spending."
 msgstr "ビットコインのウォレットの残高の内、即座に送れないビットコインが含まれている可能性があります。"
 
 #: www/views/tab-receive.html:25
-msgid "All signing devices must be added to this multisig wallet before bitcoin addresses can be created."
+msgid "All signing devices must be added to this multisig wallet before litecoin addresses can be created."
 msgstr "この共有ウォレットの必要参加者の人数が集まるまではビットコインアドレスを発行することができません。"
 
 #: www/views/tab-scan.html:21
@@ -229,11 +229,11 @@ msgid "An update to this app is available. For your security, please update to t
 msgstr "このアプリのアップデートがあります。セキュリティーを保持するために最新版にアップデートして下さい。"
 
 #: www/views/backupWarning.html:14
-msgid "Anyone with your backup phrase can access or spend your bitcoin."
+msgid "Anyone with your backup phrase can access or spend your litecoin."
 msgstr "復元フレーズを知る者はあなたのビットコインが勝手に送れてしまいます。"
 
 #: www/views/addresses.html:94
-msgid "Approximate Bitcoin network fee to transfer wallet's balance (with normal priority)"
+msgid "Approximate Litecoin network fee to transfer wallet's balance (with normal priority)"
 msgstr "ウォレットの残高を送るために推測される必要なビットコインネットワーク手数料(優先度：普通)"
 
 #: www/views/backupWarning.html:10
@@ -241,10 +241,10 @@ msgid "Are you being watched?"
 msgstr "見られていませんか？"
 
 #: src/js/controllers/preferencesExternal.js:15
-msgid "Are you being watched? Anyone with your recovery phrase can access or spend your bitcoin."
+msgid "Are you being watched? Anyone with your recovery phrase can access or spend your litecoin."
 msgstr "見られていますか？ 復元フレーズを知る者はあなたのビットコインが勝手に送れてしまいます。"
 
-#: src/js/controllers/copayers.js:56
+#: src/js/controllers/nesters.js:56
 msgid "Are you sure you want to cancel and delete this wallet?"
 msgstr "本当にこのウォレットをキャンセルし、削除しても\n"
 "宜しいですか？"
@@ -356,45 +356,45 @@ msgstr "BitPayのVISA&reg; カード"
 
 #: www/views/addressbook.add.html:38
 #: www/views/includes/incomingDataMenu.html:29
-msgid "Bitcoin Address"
+msgid "Litecoin Address"
 msgstr "ビットコインアドレス"
 
 #: www/views/includes/walletSelector.html:42
 #: www/views/tab-home.html:112
 #: www/views/tab-settings.html:108
-msgid "Bitcoin Cash Wallets"
+msgid "Litecoin Cash Wallets"
 msgstr "ビットコインキャッシュウォレット"
 
 #: www/views/modals/chooseFeeLevel.html:4
 #: www/views/preferencesFee.html:4
 #: www/views/tab-settings.html:83
-msgid "Bitcoin Network Fee Policy"
+msgid "Litecoin Network Fee Policy"
 msgstr "ビットコインネットワークの手数料設定"
 
 #: www/views/includes/walletSelector.html:11
 #: www/views/tab-home.html:97
 #: www/views/tab-settings.html:100
-msgid "Bitcoin Wallets"
+msgid "Litecoin Wallets"
 msgstr "ビットコインウォレット"
 
 #: src/js/services/incomingData.js:151
-msgid "Bitcoin cash Payment"
+msgid "Litecoin cash Payment"
 msgstr "ビットコインキャッシュペイメント"
 
 #: www/views/onboarding/tour.html:31
-msgid "Bitcoin is a currency."
+msgid "Litecoin is a currency."
 msgstr "ビットコインは通貨の一つ"
 
 #: www/views/onboarding/disclaimer.html:15
-msgid "Bitcoin is different &ndash; it cannot be safely held with a bank or web service."
+msgid "Litecoin is different &ndash; it cannot be safely held with a bank or web service."
 msgstr "ビットコインは違う &ndash; 銀行やウェブのサービスに安全に預けることはできません。"
 
 #: www/views/onboarding/tour.html:18
-msgid "Bitcoin is secure,<br>digital money."
+msgid "Litecoin is secure,<br>digital money."
 msgstr "ビットコインは世界で<br>最も安全な仮想通貨。"
 
 #: www/views/preferencesFee.html:11
-msgid "Bitcoin transactions include a fee collected by miners on the network."
+msgid "Litecoin transactions include a fee collected by miners on the network."
 msgstr "ビットコインの取引はネットワークの安全を守る「採掘者」と呼ばれる者達に送る手数料が含まれます。"
 
 #: www/views/buyAmazon.html:108
@@ -424,11 +424,11 @@ msgid "Buy"
 msgstr "購入"
 
 #: www/views/includes/buyAndSellCard.html:3
-msgid "Buy &amp; Sell Bitcoin"
+msgid "Buy &amp; Sell Litecoin"
 msgstr "ビットコインの購入&amp;売却"
 
 #: www/views/tab-send.html:40
-msgid "Buy Bitcoin"
+msgid "Buy Litecoin"
 msgstr "ビットコインを購入"
 
 #: www/views/mercadoLibre.html:22
@@ -441,7 +441,7 @@ msgid "Buy from"
 msgstr "今すぐ購入"
 
 #: src/js/services/onGoingProcess.js:40
-msgid "Buying Bitcoin..."
+msgid "Buying Litecoin..."
 msgstr "ビットコインを購入中..."
 
 #: src/js/services/onGoingProcess.js:12
@@ -467,7 +467,7 @@ msgstr "手数料計算中..."
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: www/views/copayers.html:36
+#: www/views/nesters.html:36
 msgid "Cancel invitation"
 msgstr "招待状のキャンセル"
 
@@ -559,7 +559,7 @@ msgstr "完了"
 #: src/js/controllers/buyAmazon.js:313
 #: src/js/controllers/buyMercadoLibre.js:307
 #: src/js/controllers/confirm.js:549
-#: src/js/controllers/copayers.js:55
+#: src/js/controllers/nesters.js:55
 #: src/js/controllers/topup.js:285
 #: www/views/backup.html:60
 #: www/views/backup.html:79
@@ -623,30 +623,30 @@ msgid "Contribute Translations"
 msgstr "翻訳に協力"
 
 #: src/js/controllers/confirm.js:130
-msgid "Copay only supports Bitcoin Cash using new version numbers addresses"
-msgstr "Copay のビットコインキャッシュはビットコインと完全に異なる別通貨なので、アドレスの頭文字が異なります。"
+msgid "Nest only supports Litecoin Cash using new version numbers addresses"
+msgstr "Nest のビットコインキャッシュはビットコインと完全に異なる別通貨なので、アドレスの頭文字が異なります。"
 
 #: src/js/services/bwcError.js:62
-msgid "Copayer already in this wallet"
+msgid "Nester already in this wallet"
 msgstr "ウォレット参加者が既に存在しています。"
 
 #: src/js/services/bwcError.js:77
-msgid "Copayer already voted on this spend proposal"
+msgid "Nester already voted on this spend proposal"
 msgstr "ウォレット参加者が既に送金の提案の意思表明をしています。"
 
 #: src/js/services/bwcError.js:107
-msgid "Copayer data mismatch"
+msgid "Nester data mismatch"
 msgstr "ウォレット参加者のデータ不整合"
 
 #: www/views/includes/walletActivity.html:2
-msgid "Copayer joined"
+msgid "Nester joined"
 msgstr "ウォレット参加者が加わりました"
 
 #: www/views/preferencesInformation.html:94
-msgid "Copayer {{$index}}"
+msgid "Nester {{$index}}"
 msgstr "ウォレット参加者 {{$index}}"
 
-#: src/js/controllers/copayers.js:79
+#: src/js/controllers/nesters.js:79
 #: src/js/controllers/export.js:193
 #: www/views/includes/copyToClipboard.html:4
 msgid "Copied to clipboard"
@@ -799,7 +799,7 @@ msgstr "取引履歴を更新できませんでした。"
 
 #: src/js/controllers/addresses.js:29
 #: src/js/controllers/addresses.js:37
-#: src/js/controllers/copayers.js:30
+#: src/js/controllers/nesters.js:30
 #: src/js/controllers/walletDetails.js:78
 msgid "Could not update wallet"
 msgstr "ウォレットが更新できませんでした。"
@@ -815,7 +815,7 @@ msgstr "共有ウォレットを作成"
 #: www/views/onboarding/tour.html:51
 #: www/views/tab-home.html:89
 #: www/views/tab-send.html:41
-msgid "Create bitcoin wallet"
+msgid "Create litecoin wallet"
 msgstr "ビットコインウォレット作成"
 
 #: www/views/tab-create-personal.html:131
@@ -827,8 +827,8 @@ msgid "Create shared wallet"
 msgstr "共有ウォレットを作成"
 
 #: www/views/tab-create-shared.html:160
-msgid "Create {{formData.requiredCopayers}}-of-{{formData.totalCopayers}} wallet"
-msgstr "{{formData.requiredCopayers}}-of-{{formData.totalCopayers}} ウォレットを作成"
+msgid "Create {{formData.requiredNesters}}-of-{{formData.totalNesters}} wallet"
+msgstr "{{formData.requiredNesters}}-of-{{formData.totalNesters}} ウォレットを作成"
 
 #: www/views/modals/txp-details.html:81
 #: www/views/tx-details.html:60
@@ -879,7 +879,7 @@ msgstr "送金の提案を削除"
 msgid "Delete Wallet"
 msgstr "ウォレットを削除"
 
-#: www/views/copayers.html:59
+#: www/views/nesters.html:59
 msgid "Delete it and create a new one"
 msgstr "削除して新規作成"
 
@@ -941,7 +941,7 @@ msgid "Duplicating wallet..."
 msgstr "ウォレットを複製しています..."
 
 #: www/views/addresses.html:19
-msgid "Each bitcoin wallet can generate billions of addresses from your 12-word backup. A new address is automatically generated and shown each time you receive a payment."
+msgid "Each litecoin wallet can generate billions of addresses from your 12-word backup. A new address is automatically generated and shown each time you receive a payment."
 msgstr "12個の単語から無限大のアドレスを生成することができ、それをビットコインウォレットと呼びます。送金を受け取る度に新しいアドレスを生成して受取画面でお見せします。"
 
 #: src/js/services/feeService.js:13
@@ -1030,7 +1030,7 @@ msgstr "パスワードを入力して下さい。"
 #: src/js/controllers/buyMercadoLibre.js:24
 #: src/js/controllers/buyMercadoLibre.js:35
 #: src/js/controllers/confirm.js:307
-#: src/js/controllers/copayers.js:67
+#: src/js/controllers/nesters.js:67
 #: src/js/controllers/create.js:159
 #: src/js/controllers/create.js:172
 #: src/js/controllers/create.js:178
@@ -1396,7 +1396,7 @@ msgstr "ハードウェアウォレット"
 
 #: src/js/controllers/create.js:178
 #: src/js/controllers/join.js:144
-msgid "Hardware wallets are not yet supported with Bitcoin Cash"
+msgid "Hardware wallets are not yet supported with Litecoin Cash"
 msgstr "ビットコインキャッシュはまだハードウェアウォレットに対応しておりません。"
 
 #: www/views/modals/mercadolibre-card-details.html:69
@@ -1478,7 +1478,7 @@ msgid "I understand"
 msgstr "承知しました"
 
 #: www/views/onboarding/disclaimer.html:21
-msgid "I understand that if this app is moved to another device or deleted, my bitcoin can only be recovered with the backup phrase."
+msgid "I understand that if this app is moved to another device or deleted, my litecoin can only be recovered with the backup phrase."
 msgstr "このアプリが別の端末に移動されたり、削除されたりした場合に、含まれたビットコインが復元フレーズからのみ復元ができることを理解しています。"
 
 #: www/views/onboarding/disclaimer.html:18
@@ -1614,7 +1614,7 @@ msgstr "無効のデータ"
 msgid "Invalid derivation path"
 msgstr "無効な派生パス"
 
-#: src/js/controllers/copayers.js:90
+#: src/js/controllers/nesters.js:90
 msgid "Invitation to share a {{appName}} Wallet"
 msgstr "{{appName}} 共有ウォレットへの招待"
 
@@ -1636,7 +1636,7 @@ msgid "Is this email address correct?"
 msgstr "このメールアドレスで宜しいですか？"
 
 #: www/views/addresses.html:25
-msgid "It's a good idea to avoid reusing addresses - this both protects your privacy and keeps your bitcoins secure against hypothetical attacks by quantum computers."
+msgid "It's a good idea to avoid reusing addresses - this both protects your privacy and keeps your litecoins secure against hypothetical attacks by quantum computers."
 msgstr "アドレスの再利用は避けましょう。これはプライバシーを守ることももちろんのこと、将来的にあり得るかもしれない量子コンピューターからの、ある攻撃からビットコインを守ることもできます。"
 
 #: src/js/controllers/backup.js:76
@@ -1647,7 +1647,7 @@ msgstr "正確に復元フレーズを書き留めることが大変重要です
 msgid "Join"
 msgstr "参加"
 
-#: src/js/controllers/copayers.js:85
+#: src/js/controllers/nesters.js:85
 msgid "Join my {{appName}} Wallet. Here is the invitation code: {{secret}} You can download {{appName}} for your phone or desktop at {{appUrl}}"
 msgstr "{{appName}}の共有ウォレット作りました： {{secret}} この招待コードを入力して、ウォレットに参加して下さい。アプリのダウンロードは {{appUrl}} にてどうぞ！"
 
@@ -1745,7 +1745,7 @@ msgstr "わかりました"
 msgid "Matches:"
 msgstr "結果:"
 
-#: www/views/includes/copayers.html:4
+#: www/views/includes/nesters.html:4
 #: www/views/preferencesInformation.html:85
 msgid "Me"
 msgstr "自分"
@@ -1852,7 +1852,7 @@ msgid "No access key defined"
 msgstr "アクセスキーが定義されていません"
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no bitcoin."
+msgid "No backup, no litecoin."
 msgstr "バックアップは非常に重要です！"
 
 #: www/views/addressbook.html:19
@@ -1909,7 +1909,7 @@ msgid "No wallets available to receive funds"
 msgstr "ペーパーウォレットの出金を受け取るためのウォレットが入っていません。"
 
 #: www/views/preferencesCash.html:15
-msgid "No wallets eligible for Bitcoin Cash support"
+msgid "No wallets eligible for Litecoin Cash support"
 msgstr "ビットコインキャッシュ対応できるウォレットがありません。"
 
 #: src/js/controllers/preferencesCash.js:58
@@ -1954,7 +1954,7 @@ msgid "Note: if this BCH wallet was duplicated from a BTC wallet, they share the
 msgstr "注意: このビットコインキャッシュウォレットがビットコインウォレットからの複製の場合、復元フレーズは一緒です。"
 
 #: www/views/modals/wallets.html:25
-msgid "Notice: only 1-1 (single signature) wallets can be used for sell bitcoin"
+msgid "Notice: only 1-1 (single signature) wallets can be used for sell litecoin"
 msgstr "注意： ビットコインの売却は 1-of-1 (単一署名) のウォレットからしか行えません。"
 
 #: www/views/preferencesNotifications.html:3
@@ -2094,7 +2094,7 @@ msgid "Paste the backup plain text code"
 msgstr "バックアップの文字をここに貼り付けて下さい"
 
 #: www/views/bitpayCardIntro.html:28
-msgid "Pay 0% fees to turn bitcoin into dollars."
+msgid "Pay 0% fees to turn litecoin into dollars."
 msgstr "0% 手数料でビットコインを米ドルに替える"
 
 #: www/views/modals/paypro.html:18
@@ -2155,7 +2155,7 @@ msgid "Payment accepted. It will be broadcasted by Glidera. In case there is a p
 msgstr "取引が承認されました。Glideraより送信されます。問題があった場合、送金命令を出す６時間以内に取り消すことができます。"
 
 #: src/js/services/incomingData.js:152
-msgid "Payment address was translated to new Bitcoin Cash address format:"
+msgid "Payment address was translated to new Litecoin Cash address format:"
 msgstr "支払先アドレスはビットコインキャッシュの新フォーマットに変更された:"
 
 #: www/views/modals/txp-details.html:107
@@ -2209,8 +2209,8 @@ msgid "Please tap each word in the correct order."
 msgstr "正しい順序で各単語をタップしてください。"
 
 #: src/js/services/bwcError.js:101
-msgid "Please upgrade Copay to perform this action"
-msgstr "この操作を実行するにはCopayを最新バージョンに更新してください"
+msgid "Please upgrade Nest to perform this action"
+msgstr "この操作を実行するにはNestを最新バージョンに更新してください"
 
 #: www/views/walletDetails.html:142
 #: www/views/walletDetails.html:62
@@ -2509,7 +2509,7 @@ msgid "Search Transactions"
 msgstr "取引を検索"
 
 #: www/views/tab-send.html:18
-msgid "Search or enter bitcoin address"
+msgid "Search or enter litecoin address"
 msgstr "連絡先検索かビットコインアドレスを指定"
 
 #: www/views/modals/search.html:16
@@ -2541,7 +2541,7 @@ msgid "Self-signed Certificate"
 msgstr "自己署名証明書"
 
 #: src/js/services/onGoingProcess.js:41
-msgid "Selling Bitcoin..."
+msgid "Selling Litecoin..."
 msgstr "ビットコインを売却中..."
 
 #: www/views/feedback/send.html:13
@@ -2662,8 +2662,8 @@ msgstr "設定"
 msgid "Share the love by inviting your friends."
 msgstr "是非友達と共有して下さい"
 
-#: www/views/copayers.html:20
-msgid "Share this invitation with your copayers"
+#: www/views/nesters.html:20
+msgid "Share this invitation with your nesters"
 msgstr "ウォレット参加者に\n"
 "この招待コードを\n"
 "送って下さい。"
@@ -2696,7 +2696,7 @@ msgid "Show advanced options"
 msgstr "詳細設定を表示"
 
 #: www/views/tab-send.html:42
-msgid "Show bitcoin address"
+msgid "Show litecoin address"
 msgstr "ビットコインアドレスを表示"
 
 #: www/views/tab-send.html:64
@@ -2744,7 +2744,7 @@ msgid "Slide to send"
 msgstr "スライドして送る"
 
 #: www/views/preferencesCash.html:56
-msgid "Some of your wallets are not eligible for Bitcoin Cash support. You can try to access BCH funds from these wallets using the"
+msgid "Some of your wallets are not eligible for Litecoin Cash support. You can try to access BCH funds from these wallets using the"
 msgstr "いくつかのウォレットがビットコインキャッシュに対応できません。ビットコインキャッシュの取り戻しは復元ツールで試すとうまくいくかもしれません。"
 
 #: src/js/controllers/create.js:86
@@ -2765,11 +2765,11 @@ msgid "Spending Password needed"
 msgstr "パスワードが必要"
 
 #: www/views/walletDetails.html:173
-msgid "Spending this balance will need significant Bitcoin network fees"
+msgid "Spending this balance will need significant Litecoin network fees"
 msgstr "この入力の組み合わせを送金するために膨大なビットコインネットワーク手数料を必要とします"
 
 #: www/views/tab-send.html:33
-msgid "Start sending bitcoin"
+msgid "Start sending litecoin"
 msgstr "ビットコインの送金を始めましょう"
 
 #: www/views/lockSetup.html:3
@@ -2807,7 +2807,7 @@ msgid "THIS ACTION CANNOT BE REVERSED"
 msgstr "＊＊＊注意＊＊＊ このアクションを元に戻すことはできません！！！"
 
 #: www/views/onboarding/welcome.html:5
-msgid "Take control of your money,<br>get started with bitcoin."
+msgid "Take control of your money,<br>get started with litecoin."
 msgstr "お金のコントロールを取り戻そう、<br>ビットコインをはじめよう"
 
 #: www/views/walletDetails.html:132
@@ -2863,15 +2863,15 @@ msgid "The Ledger Chrome application is not installed"
 msgstr "Ledgerのクロームアプリがインストールされていません。"
 
 #: www/views/modals/wallet-balance.html:55
-msgid "The amount of bitcoin immediately spendable from this wallet."
+msgid "The amount of litecoin immediately spendable from this wallet."
 msgstr "このウォレットからすぐに送金できる額"
 
 #: www/views/modals/wallet-balance.html:93
-msgid "The amount of bitcoin stored in this wallet that is allocated as inputs to your pending transaction proposals. The amount is determined using unspent transaction outputs associated with this wallet and may be more than the actual amounts associated with your pending transaction proposals."
+msgid "The amount of litecoin stored in this wallet that is allocated as inputs to your pending transaction proposals. The amount is determined using unspent transaction outputs associated with this wallet and may be more than the actual amounts associated with your pending transaction proposals."
 msgstr "現在協議中の送金の提案によってロックされてしまっている金額です。この金額は未使用出力の割り当てられた合計額になりますので、必ずしも送金提案の送金額だけがロックされるというものではありません。"
 
 #: www/views/modals/wallet-balance.html:74
-msgid "The amount of bitcoin stored in this wallet with less than 1 blockchain confirmation."
+msgid "The amount of litecoin stored in this wallet with less than 1 blockchain confirmation."
 msgstr "このウォレットの1承認未満の残高。"
 
 #: www/views/tab-import-phrase.html:5
@@ -2928,7 +2928,7 @@ msgid "The spend proposal is not pending"
 msgstr "送金の提案が協議中ではありません。"
 
 #: www/views/modals/wallet-balance.html:36
-msgid "The total amount of bitcoin stored in this wallet."
+msgid "The total amount of litecoin stored in this wallet."
 msgstr "このウォレットのビットコインの総残高"
 
 #: www/views/preferencesHistory.html:27
@@ -2959,11 +2959,11 @@ msgid "This app is fantastic!"
 msgstr "このアプリは素晴らしいです!"
 
 #: www/views/onboarding/tour.html:47
-msgid "This app stores your bitcoin with cutting-edge security."
+msgid "This app stores your litecoin with cutting-edge security."
 msgstr "このアプリは、最先端のセキュリティであなたのビットコインをお守りします。"
 
 #: src/js/controllers/confirm.js:523
-msgid "This bitcoin payment request has expired."
+msgid "This litecoin payment request has expired."
 msgstr "ビットコインペイメントの請求期限が切れています。"
 
 #: www/views/join.html:133
@@ -2977,7 +2977,7 @@ msgid "This recovery phrase was created with a password. To recover this wallet 
 msgstr "この復元フレーズにパスワードがかかっています。このウォレットを復元するためには、復元フレーズに加え、パスワードも必要です。"
 
 #: www/views/tx-details.html:91
-msgid "This transaction amount is too small compared to current Bitcoin network fees. Spending these funds will need a Bitcoin network fee cost comparable to the funds itself."
+msgid "This transaction amount is too small compared to current Litecoin network fees. Spending these funds will need a Litecoin network fee cost comparable to the funds itself."
 msgstr "この取引の金額はビットコインネットワーク手数料より低いです。送金額より大きい手数料を払ってしまうことになります。"
 
 #: www/views/tx-details.html:87
@@ -3004,11 +3004,11 @@ msgid "To"
 msgstr "宛先"
 
 #: www/views/tab-send.html:37
-msgid "To get started, buy bitcoin or share your address. You can receive bitcoin from any wallet or service."
+msgid "To get started, buy litecoin or share your address. You can receive litecoin from any wallet or service."
 msgstr "はじめるには、ビットコインを購入したり、アドレスを他の人に共有したりしましょう。どのビットコインウォレットやサービスから受け取れます。"
 
 #: www/views/tab-send.html:38
-msgid "To get started, you'll need to create a bitcoin wallet and get some bitcoin."
+msgid "To get started, you'll need to create a litecoin wallet and get some litecoin."
 msgstr "はじめに、ビットコインウォレットを作成し、ビットコインを入手する必要があります。"
 
 #: src/js/services/bitpayAccountService.js:73
@@ -3035,7 +3035,7 @@ msgid "Total Locked Balance"
 msgstr "ロック中の残高"
 
 #: www/views/tab-create-shared.html:35
-msgid "Total number of copayers"
+msgid "Total number of nesters"
 msgstr "参加人数を選択して下さい。"
 
 #: www/views/addresses.html:81
@@ -3100,7 +3100,7 @@ msgid "Try again in {{expires}}"
 msgstr "{{expires}} 経過後にもう一度試してください。"
 
 #: www/views/bitpayCardIntro.html:18
-msgid "Turn bitcoin into dollars, swipe anywhere Visa<sup>&reg;</sup> is accepted."
+msgid "Turn litecoin into dollars, swipe anywhere Visa<sup>&reg;</sup> is accepted."
 msgstr "瞬時にビットコインを米ドルに変換！Visa<sup>&reg;</sup>カード利用可能店舗ならどこでも！"
 
 #: www/views/tab-import-phrase.html:17
@@ -3210,7 +3210,7 @@ msgid "WARNING: UNTRUSTED CERTIFICATE"
 msgstr "警告: 信頼されていない証明書"
 
 #: www/views/preferencesPrivateKey.html:14
-msgid "WARNING: Your extended private keys are all that is needed to access your bitcoin funds. Be sure to protect your private keys and store them only on secure devices. BitPay does not have access to your private keys, so you alone are responsible for your keys. If you share key access with external services, you take responsibility for the risk of theft or breach. Only advanced users should handle extended private keys directly."
+msgid "WARNING: Your extended private keys are all that is needed to access your litecoin funds. Be sure to protect your private keys and store them only on secure devices. BitPay does not have access to your private keys, so you alone are responsible for your keys. If you share key access with external services, you take responsibility for the risk of theft or breach. Only advanced users should handle extended private keys directly."
 msgstr "注意： 拡張秘密鍵だけでビットコインをすべて送金できてしまいます。秘密鍵を守り、安全な端末のみにて管理して下さい。BitPayは秘密鍵へのアクセスができないので、管理する責任は全て自己責任になります。外部のサービスにこの鍵を共有する場合、窃盗などのリスクを全て受け入れた上で宜しくお願いします。拡張秘密鍵を直接扱うのは上級者のユーザーのみです。"
 
 #: src/js/services/onGoingProcess.js:15
@@ -3221,11 +3221,11 @@ msgstr "Ledger を待っています..."
 msgid "Waiting for Trezor..."
 msgstr "Trezor を待っています..."
 
-#: www/views/copayers.html:48
-msgid "Waiting for copayers"
+#: www/views/nesters.html:48
+msgid "Waiting for nesters"
 msgstr "ウォレット参加者を待っています"
 
-#: www/views/copayers.html:53
+#: www/views/nesters.html:53
 msgid "Waiting..."
 msgstr "少々お待ち下さい…"
 
@@ -3317,7 +3317,7 @@ msgstr "{{appName}}内の既存のウォレットです"
 msgid "Wallet created"
 msgstr "ウォレットが作成されました"
 
-#: www/views/copayers.html:58
+#: www/views/nesters.html:58
 msgid "Wallet incomplete and broken"
 msgstr "ウォレットが未完成で破損しています"
 
@@ -3463,7 +3463,7 @@ msgid "You can make contributions by signing up on our Crowdin community transla
 msgstr "Crowdinのサイトにて翻訳者登録をして、今すぐに投稿をいただけます。お待ちしております。"
 
 #: www/views/tab-scan.html:16
-msgid "You can scan bitcoin addresses, payment requests, paper wallets, and more."
+msgid "You can scan litecoin addresses, payment requests, paper wallets, and more."
 msgstr "ビットコインアドレス、支払い請求、ペーパーウォレットなどをスキャンできます。"
 
 #: src/js/controllers/preferencesAbout.js:14
@@ -3471,7 +3471,7 @@ msgid "You can see the latest developments and contribute to this open source ap
 msgstr "GitHubのページにて最近の開発動向を見たり、改善案のソースコードの貢献したりすることができます。"
 
 #: www/views/onboarding/tour.html:19
-msgid "You can spend bitcoin at millions of websites and stores worldwide."
+msgid "You can spend litecoin at millions of websites and stores worldwide."
 msgstr "世界中のECサイトや店舗でビットコインを使って支払いができます。"
 
 #: www/views/backup.html:15
@@ -3483,7 +3483,7 @@ msgid "You can trade it for other currencies like US Dollars, Euros, or Pounds."
 msgstr "米ドル、ユーロ、ポンドなど他の通貨との取引ができます。"
 
 #: www/views/onboarding/tour.html:46
-msgid "You control your bitcoin."
+msgid "You control your litecoin."
 msgstr "ビットコインの自己管理"
 
 #: www/views/modals/chooseFeeLevel.html:64
@@ -3508,11 +3508,11 @@ msgid "Your Gift Cards"
 msgstr "ギフトカード"
 
 #: www/views/includes/confirmBackupPopup.html:6
-msgid "Your bitcoin wallet is backed up!"
+msgid "Your litecoin wallet is backed up!"
 msgstr "ビットコインウォレットがバックアップされました!"
 
 #: www/views/tab-home.html:50
-msgid "Your bitcoin wallet is ready!"
+msgid "Your litecoin wallet is ready!"
 msgstr "ビットコインウォレットが完成しました!"
 
 #: www/views/modals/chooseFeeLevel.html:61
@@ -3550,7 +3550,7 @@ msgstr "ウォレットは一度もクラウドへ保存されたりすること
 
 #: src/js/services/walletService.js:1060
 msgid "Your wallet key will be encrypted. The Spending Password cannot be recovered. Be sure to write it down."
-msgstr "ウォレットの鍵が暗号化されます。Copayでは送金時のパスワードをリセットしてくれる機能がありませんので、パスワードを忘れないよう、控えておいて下さい。"
+msgstr "ウォレットの鍵が暗号化されます。Nestでは送金時のパスワードをリセットしてくれる機能がありませんので、パスワードを忘れないよう、控えておいて下さい。"
 
 #: www/views/includes/walletList.html:13
 #: www/views/includes/walletSelector.html:30
@@ -3600,11 +3600,11 @@ msgid "{{amountStr}} for Mercado Livre Brazil Gift Card"
 msgstr "{{amountStr}} を Mercado Livre Brazil ギフトカードに"
 
 #: www/views/preferencesBwsUrl.html:21
-msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bws.bitpay.com (BitPay's public BWS instance)."
-msgstr "{{appName}}はブロックチェーンの情報を取得したり参加者を同期させたりするためにBitcore Wallet Service (BWS)に依存します。初期値としてBitPay社が提供する https://bws.bitpay.com (BitPay公式のBWSサーバー)を設定していますが、独自で運用してウォレットをそちらに接続しても構いません。"
+msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Nester synchronization. The default configuration points to http://107.189.10.11:3232 (BitPay's public BWS instance)."
+msgstr "{{appName}}はブロックチェーンの情報を取得したり参加者を同期させたりするためにBitcore Wallet Service (BWS)に依存します。初期値としてBitPay社が提供する http://107.189.10.11:3232 (BitPay公式のBWSサーバー)を設定していますが、独自で運用してウォレットをそちらに接続しても構いません。"
 
 #: src/js/controllers/confirm.js:408
-msgid "{{fee}} will be deducted for bitcoin networking fees."
+msgid "{{fee}} will be deducted for litecoin networking fees."
 msgstr "{{fee}} のビットコインネットワーク手数料が差し引かれます。"
 
 #: www/views/confirm.html:85
@@ -3615,7 +3615,7 @@ msgstr "送金額に対する {{tx.txp[wallet.id].feeRatePerStr}}"
 msgid "{{updatingTxHistoryProgress}} transactions downloaded"
 msgstr "{{updatingTxHistoryProgress}} 個の取引ダウンロード済み"
 
-#: www/views/copayers.html:46
+#: www/views/nesters.html:46
 #: www/views/includes/walletInfo.html:18
 #: www/views/preferencesCash.html:33
 msgid "{{wallet.m}}-of-{{wallet.n}}"

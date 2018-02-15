@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('buyAndSellCardController', function($scope, nextStepsService, $ionicScrollDelegate, buyAndSellService) {
+angular.module('nestApp.controllers').controller('buyAndSellCardController', function($scope, nextStepsService, $ionicScrollDelegate, buyAndSellService) {
 
   $scope.services = buyAndSellService.getLinked();
 

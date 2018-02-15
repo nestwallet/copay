@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').factory('ongoingProcess', function($log, $timeout, $filter, lodash, $ionicLoading, gettext, platformInfo) {
+angular.module('nestApp.services').factory('ongoingProcess', function($log, $timeout, $filter, lodash, $ionicLoading, gettext, platformInfo) {
   var root = {};
   var isCordova = platformInfo.isCordova;
   var isWindowsPhoneApp = platformInfo.isCordova && platformInfo.isWP;
@@ -37,8 +37,8 @@ angular.module('copayApp.services').factory('ongoingProcess', function($log, $ti
     'generatingNewAddress': gettext('Generating new address...'),
     'sendingByEmail': gettext('Preparing addresses...'),
     'sending2faCode': gettext('Sending 2FA code...'),
-    'buyingBitcoin': gettext('Buying Bitcoin...'),
-    'sellingBitcoin': gettext('Selling Bitcoin...'),
+    'buyingLitecoin': gettext('Buying Litecoin...'),
+    'sellingLitecoin': gettext('Selling Litecoin...'),
     'fetchingBitPayAccount': gettext('Fetching BitPay Account...'),
     'updatingGiftCards': 'Updating Gift Cards...',
     'updatingGiftCard': 'Updating Gift Card...',

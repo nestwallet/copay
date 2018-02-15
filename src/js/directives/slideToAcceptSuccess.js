@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.directives')
+angular.module('nestApp.directives')
   .directive('slideToAcceptSuccess', function($timeout, platformInfo) {
     return {
       restrict: 'E',

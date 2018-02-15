@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('preferencesPrivateKeyController', function($scope, $log, $timeout, $ionicHistory, profileService, walletService) {
+angular.module('nestApp.controllers').controller('preferencesPrivateKeyController', function($scope, $log, $timeout, $ionicHistory, profileService, walletService) {
 
   $scope.$on("$ionicView.beforeEnter", function(event, data) {
     if (!data.stateParams || !data.stateParams.walletId) {

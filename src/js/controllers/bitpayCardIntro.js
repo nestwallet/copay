@@ -1,5 +1,5 @@
 'use strict';
-angular.module('copayApp.controllers').controller('bitpayCardIntroController', function($scope, $log, $state, $ionicHistory, storageService, externalLinkService, bitpayCardService, gettextCatalog, popupService, bitpayAccountService) {
+angular.module('nestApp.controllers').controller('bitpayCardIntroController', function($scope, $log, $state, $ionicHistory, storageService, externalLinkService, bitpayCardService, gettextCatalog, popupService, bitpayAccountService) {
 
   $scope.$on("$ionicView.beforeEnter", function(event, data) {
     if (data.stateParams && data.stateParams.secret) {

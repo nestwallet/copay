@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').service('startupService', function($log, $timeout) {
+angular.module('nestApp.services').service('startupService', function($log, $timeout) {
 
   var splashscreenVisible = true;
   var statusBarVisible = false;

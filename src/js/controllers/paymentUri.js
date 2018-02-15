@@ -1,22 +1,22 @@
 'use strict';
-angular.module('copayApp.controllers').controller('paymentUriController',
+angular.module('nestApp.controllers').controller('paymentUriController',
   function($rootScope, $scope, $stateParams, $location, $timeout, $ionicHistory, profileService, configService, lodash, bitcore, $state) {
     function strip(number) {
       return (parseFloat(number.toPrecision(12)));
     };
 
-    // Build bitcoinURI with querystring
+    // Build litecoinURI with querystring
     this.init = function() {
       var query = [];
-      this.bitcoinURI = $stateParams.url;
+      this.litecoinURI = $stateParams.url;
 
       var URI = bitcore.URI;
-      var isUriValid = URI.isValid(this.bitcoinURI);
-      if (!URI.isValid(this.bitcoinURI)) {
+      var isUriValid = URI.isValid(this.litecoinURI);
+      if (!URI.isValid(this.litecoinURI)) {
         this.error = true;
         return;
       }
-      var uri = new URI(this.bitcoinURI);
+      var uri = new URI(this.litecoinURI);
 
       if (uri && uri.address) {
         var config = configService.getSync().wallet.settings;
@@ -50,7 +50,7 @@ angular.module('copayApp.controllers').controller('paymentUriController',
       $ionicHistory.removeBackView();
       $state.go('tabs.home');
       $timeout(function() {
-        $rootScope.$emit('paymentUri', self.bitcoinURI);
+        $rootScope.$emit('paymentUri', self.litecoinURI);
       }, 1000);
     };
   });

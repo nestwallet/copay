@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('tabReceiveController', function($rootScope, $scope, $timeout, $log, $ionicModal, $state, $ionicHistory, $ionicPopover, storageService, platformInfo, walletService, profileService, configService, lodash, gettextCatalog, popupService, bwcError, bitcoreCash) {
+angular.module('nestApp.controllers').controller('tabReceiveController', function($rootScope, $scope, $timeout, $log, $ionicModal, $state, $ionicHistory, $ionicPopover, storageService, platformInfo, walletService, profileService, configService, lodash, gettextCatalog, popupService, bwcError, bitcoreCash) {
 
   var listeners = [];
   $scope.isCordova = platformInfo.isCordova;
@@ -33,14 +33,14 @@ angular.module('copayApp.controllers').controller('tabReceiveController', functi
     });
   };
 
-  $scope.goCopayers = function() {
+  $scope.goNesters = function() {
     $ionicHistory.removeBackView();
     $ionicHistory.nextViewOptions({
       disableAnimate: true
     });
     $state.go('tabs.home');
     $timeout(function() {
-      $state.transitionTo('tabs.copayers', {
+      $state.transitionTo('tabs.nesters', {
         walletId: $scope.wallet.credentials.walletId
       });
     }, 100);
@@ -143,7 +143,7 @@ angular.module('copayApp.controllers').controller('tabReceiveController', functi
 
   $scope.shareAddress = function() {
     if (!$scope.isCordova) return;
-    var protocol = 'bitcoin';
+    var protocol = 'litecoin';
     if ($scope.wallet.coin == 'bch') protocol += 'cash';
     window.plugins.socialsharing.share(protocol + ':' + $scope.addr, null, null, null);
   }

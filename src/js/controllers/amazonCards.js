@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('amazonCardsController',
+angular.module('nestApp.controllers').controller('amazonCardsController',
   function($scope, $timeout, $ionicModal, $log, $ionicScrollDelegate, lodash, amazonService, platformInfo, externalLinkService, popupService, ongoingProcess, timeService) {
 
     var updateGiftCard;

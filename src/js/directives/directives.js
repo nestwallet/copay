@@ -1,15 +1,15 @@
 'use strict';
-angular.module('copayApp.directives')
+angular.module('nestApp.directives')
   .directive('validAddress', ['$rootScope', 'bitcore', 'bitcoreCash',
     function($rootScope, bitcore, bitcoreCash) {
       return {
         require: 'ngModel',
         link: function(scope, elem, attrs, ctrl) {
-          // Bitcoin address
+          // Litecoin address
           var URI = bitcore.URI;
           var Address = bitcore.Address
 
-          // Bitcoin Cash address
+          // Litecoin Cash address
           var URICash = bitcoreCash.URI;
           var AddressCash = bitcoreCash.Address
 
@@ -23,7 +23,7 @@ angular.module('copayApp.directives')
 
             // Bip21 uri
             var uri, isAddressValidLivenet, isAddressValidTestnet;
-            if (/^bitcoin:/.test(value)) {
+            if (/^litecoin:/.test(value)) {
               var isUriValid = URI.isValid(value);
               if (isUriValid) {
                 uri = new URI(value);
@@ -32,7 +32,7 @@ angular.module('copayApp.directives')
               }
               ctrl.$setValidity('validAddress', isUriValid && (isAddressValidLivenet || isAddressValidTestnet));
               return value;
-            } else if (/^bitcoincash:/.test(value)) {
+            } else if (/^litecoincash:/.test(value)) {
               var isUriValid = URICash.isValid(value);
               if (isUriValid) {
                 uri = new URICash(value);
@@ -47,7 +47,7 @@ angular.module('copayApp.directives')
               return;
             }
 
-            // Regular Address: try Bitcoin and Bitcoin Cash
+            // Regular Address: try Litecoin and Litecoin Cash
             var regularAddressLivenet = Address.isValid(value, 'livenet');
             var regularAddressTestnet = Address.isValid(value, 'testnet');
             var regularAddressCashLivenet = AddressCash.isValid(value, 'livenet');

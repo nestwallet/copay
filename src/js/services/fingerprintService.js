@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').factory('fingerprintService', function ($log, gettextCatalog, configService, platformInfo) {
+angular.module('nestApp.services').factory('fingerprintService', function ($log, gettextCatalog, configService, platformInfo) {
   var root = {};
 
   var _isAvailable = false;
@@ -26,7 +26,7 @@ angular.module('copayApp.services').factory('fingerprintService', function ($log
   var requestFinger = function (cb) {
     try {
       FingerprintAuth.encrypt({
-        clientId: 'Copay'
+        clientId: 'Nest'
       },
         function (result) {
           if (result.withFingerprint) {

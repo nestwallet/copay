@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.directives')
+angular.module('nestApp.directives')
   .directive('actionSheet', function($rootScope, $timeout) {
     return {
       restrict: 'E',

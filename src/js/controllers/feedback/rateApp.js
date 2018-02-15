@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('rateAppController', function($scope, $state, $stateParams, $window, lodash, externalLinkService, configService, platformInfo, feedbackService, ongoingProcess, popupService, appConfigService) {
+angular.module('nestApp.controllers').controller('rateAppController', function($scope, $state, $stateParams, $window, lodash, externalLinkService, configService, platformInfo, feedbackService, ongoingProcess, popupService, appConfigService) {
   $scope.score = parseInt($stateParams.score);
   $scope.appName = appConfigService.nameCase;
   var isAndroid = platformInfo.isAndroid;
@@ -39,9 +39,9 @@ angular.module('copayApp.controllers').controller('rateAppController', function(
     var defaults = configService.getDefaults();
     var url;
     if (isAndroid)
-      url = $scope.appName == 'Copay' ? defaults.rateApp.copay.android : defaults.rateApp.bitpay.android;
+      url = $scope.appName == 'Nest' ? defaults.rateApp.nest.android : defaults.rateApp.bitpay.android;
     if (isIOS)
-      url = $scope.appName == 'Copay' ? defaults.rateApp.copay.ios : defaults.rateApp.bitpay.ios;
+      url = $scope.appName == 'Nest' ? defaults.rateApp.nest.ios : defaults.rateApp.bitpay.ios;
 
     externalLinkService.open(url);
     $state.go('tabs.rate.complete', {

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('preferencesExternalController', function($scope, $stateParams, lodash, gettextCatalog, popupService, profileService, walletService) {
+angular.module('nestApp.controllers').controller('preferencesExternalController', function($scope, $stateParams, lodash, gettextCatalog, popupService, profileService, walletService) {
   var wallet = profileService.getWallet($stateParams.walletId);
 
   $scope.externalSource = lodash.find(walletService.externalSource, function(source) {
@@ -12,7 +12,7 @@ angular.module('copayApp.controllers').controller('preferencesExternalController
 
     $scope.showMneumonicFromHardwarePopup = function() {
       var title = gettextCatalog.getString('Warning!');
-      var message = gettextCatalog.getString('Are you being watched? Anyone with your recovery phrase can access or spend your bitcoin.');
+      var message = gettextCatalog.getString('Are you being watched? Anyone with your recovery phrase can access or spend your litecoin.');
       popupService.showConfirm(title, message, null, null, function(res) {
         if (res) {
           walletService.showMneumonicFromHardware(wallet, function(err) {

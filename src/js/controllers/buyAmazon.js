@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('buyAmazonController', function($scope, $log, $state, $timeout, $filter, $ionicHistory, $ionicConfig, $ionicModal, lodash, amazonService, popupService, profileService, ongoingProcess, configService, walletService, payproService, bwcError, externalLinkService, platformInfo, gettextCatalog, txFormatService, emailService) {
+angular.module('nestApp.controllers').controller('buyAmazonController', function($scope, $log, $state, $timeout, $filter, $ionicHistory, $ionicConfig, $ionicModal, lodash, amazonService, popupService, profileService, ongoingProcess, configService, walletService, payproService, bwcError, externalLinkService, platformInfo, gettextCatalog, txFormatService, emailService) {
 
   var coin = 'btc';
   var amount;
@@ -140,7 +140,7 @@ angular.module('copayApp.controllers').controller('buyAmazonController', functio
     }
 
     var outputs = [];
-    var toAddress = invoice.bitcoinAddress;
+    var toAddress = invoice.litecoinAddress;
     var amountSat = parseInt((invoice.btcDue * 100000000).toFixed(0)); // BTC to Satoshi
 
     outputs.push({

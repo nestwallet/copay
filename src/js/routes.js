@@ -13,7 +13,7 @@ if (window && window.navigator) {
 }
 
 //Setting up route
-angular.module('copayApp').config(function(historicLogProvider, $provide, $logProvider, $stateProvider, $urlRouterProvider, $compileProvider, $ionicConfigProvider) {
+angular.module('nestApp').config(function(historicLogProvider, $provide, $logProvider, $stateProvider, $urlRouterProvider, $compileProvider, $ionicConfigProvider) {
     $urlRouterProvider.otherwise('/starting');
 
     // NO CACHE
@@ -640,16 +640,16 @@ angular.module('copayApp').config(function(historicLogProvider, $provide, $logPr
 
       /*
        *
-       * Copayers
+       * Nesters
        *
        */
 
-      .state('tabs.copayers', {
-        url: '/copayers/:walletId',
+      .state('tabs.nesters', {
+        url: '/nesters/:walletId',
         views: {
           'tab-home': {
-            templateUrl: 'views/copayers.html',
-            controller: 'copayersController'
+            templateUrl: 'views/nesters.html',
+            controller: 'nestersController'
           }
         }
       })
@@ -908,7 +908,7 @@ angular.module('copayApp').config(function(historicLogProvider, $provide, $logPr
 
       /*
        *
-       * Buy or Sell Bitcoin
+       * Buy or Sell Litecoin
        *
        */
 

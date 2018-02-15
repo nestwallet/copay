@@ -1,5 +1,5 @@
 'use strict';
-angular.module('copayApp.services')
+angular.module('nestApp.services')
   .factory('bitcore', function bitcoreFactory(bwcService) {
     var bitcore = bwcService.getBitcore();
     return bitcore;
