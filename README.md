@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/bitpay/nest/master/resources/nest/android/icon/drawable-xxxhdpi-icon.png" alt="Nest" width="79">
+<img src="https://avatars1.githubusercontent.com/u/35084736" alt="Nest" width="79">
 
 [![Build Status](https://secure.travis-ci.org/bitpay/nest.svg)](http://travis-ci.org/bitpay/nest)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/nest/localized.png)](https://crowdin.com/project/nest)
@@ -11,7 +11,7 @@ For a list of frequently asked questions please visit the [Nest FAQ](https://git
 
 ## Main Features
 
-- Supports Litecoin (BTC) and Litecoin Cash (BCH) wallets
+- Supports Litecoin (LTC) and Litecoin Cash (LCH) wallets
 - Multiple wallet creation and management in-app
 - Intuitive, multisignature security for personal or shared wallets
 - Easy spending proposal flow for shared wallets and group payments
@@ -20,7 +20,7 @@ For a list of frequently asked questions please visit the [Nest FAQ](https://git
 - Support for Litecoin testnet wallets
 - Synchronous access across all major mobile and desktop platforms
 - Payment protocol (BIP70-BIP73) support: easily-identifiable payment requests and verifiable, secure litecoin payments
-- Support for over 150 currency pricing options and unit denomination in BTC or bits
+- Support for over 150 currency pricing options and unit denomination in LTC or bits
 - Mnemonic (BIP39) support for wallet backups
 - Paper wallet sweep support (BIP38)
 - Hardware wallet support (Trezor and Ledger) (only in Chrome App version)
