@@ -3,7 +3,7 @@
 [![Build Status](https://secure.travis-ci.org/bitpay/nest.svg)](http://travis-ci.org/bitpay/nest)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/nest/localized.png)](https://crowdin.com/project/nest)
 
-Nest is a secure Litecoin and Litecoin Cash wallet platform for both desktop and mobile devices. Nest uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
+Nest is a secure Litecoin wallet platform for both desktop and mobile devices. Nest uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
 
 Binary versions of Nest are available for download at [Nest.io](https://nest.io/#download). Nest Binaries are signed with the key `nest@bitpay.com` – See the section [`How to Verify Nest Signatures`](https://github.com/bitpay/nest#how-to-verify-nest-signatures) for details.
 
@@ -11,7 +11,7 @@ For a list of frequently asked questions please visit the [Nest FAQ](https://git
 
 ## Main Features
 
-- Supports Litecoin (LTC) and Litecoin Cash (LCH) wallets
+- Supports Litecoin (LTC) wallets
 - Multiple wallet creation and management in-app
 - Intuitive, multisignature security for personal or shared wallets
 - Easy spending proposal flow for shared wallets and group payments
